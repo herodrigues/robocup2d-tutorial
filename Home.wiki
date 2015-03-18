@@ -1,0 +1,105 @@
+Se você está aqui é porque veio atrás de conhecimento.   
+
+Leia os artigos com atenção e qualquer dúvida, sugestão ou correção envie um e-mail para herinson.br@gmail.com
+
+**NOTA**:
+- Em todos os artigos, o símbolo $ representa a marca do prompt do terminal. Assim, quando esse símbolo aparecer, significa que o que vem na sequência é um comando que deve ser digitado em um terminal.  
+
+- Dê preferência para usar sua distribuição Linux em inglês. Alguns problemas podem ocorrer durante a execução do simulador se sua distribuição Linux estiver em português.  
+
+### Articles:  
+
+- **Tutorials:**  
+
+[1 - Instalando o simulador](https://bitbucket.com/herinson/ibots2d/wiki/Instalando-o-simulador)  
+
+[2 - Rodando uma partida com o agent2D](https://bitbucket.com/herinson/ibots2d/wiki/Rodando-uma-partida-com-o-agent2d)  
+
+[3 - Configurando o trainer](https://bitbucket.com/herinson/ibots2d/wiki/Configurando-o-trainer)  
+
+[4 - Criando formações com o fedit](https://bitbucket.com/herinson/ibots2d/wiki/Criando-formações-com-o-fedit)  
+
+- **Analyses, statistics and debugging**:  
+
+- **Utility**:   
+
+[1 - Autotools](https://bitbucket.com/herinson/ibots2d/wiki/Autotools)  
+
+[2 - git SCM: configuração, branches, commits e bitbucket](https://bitbucket.com/herinson/ibots2d/wiki/git-SCM:-configura%C3%A7%C3%A3o,-branches-e-bitbucket) 
+ 
+[3 - Script para rodar server, monitor e teams](https://bitbucket.com/herinson/ibots2d/wiki/Script-para-rodar-server,-times-e-monitor)  
+
+[4 - Script com várias equipes](https://bitbucket.com/herinson/ibots2d/wiki/Script-com-varias-equipes)  
+
+[5 - SoccerWindow2 como debugger](https://bitbucket.com/herinson/ibots2d/wiki/SoccerWindow2-como-debugger)  
+
+- **Classes**:  
+
+**_agent2D_**   
+> 1. Chain actions   
+[ActionGenerator](https://bitbucket.com/herinson/ibots2d/wiki/ActionGenerator)  
+
+[ActionStatePair](https://bitbucket.com/herinson/ibots2d/wiki/ActionStatePair)  
+
+[CooperativeAction](https://bitbucket.com/herinson/ibots2d/wiki/CooperativeAction)  
+
+[FieldAnalyzer](https://bitbucket.com/herinson/ibots2d/wiki/FieldAnalyzer)  
+
+[PredictState](https://bitbucket.com/herinson/ibots2d/wiki/PredictState)  
+
+  
+2. Behaviours   
+[Bhv_BasicMove](https://bitbucket.com/herinson/ibots2d/wiki/Bhv_BasicMove)  
+
+[Bhv_BasicOffensiveKick](https://bitbucket.com/herinson/ibots2d/wiki/Bhv_BasicOffensiveKick)  
+
+[Bhv_BasicTackle](https://bitbucket.com/herinson/ibots2d/wiki/Bhv_BasicTackle)  
+
+[Bhv_GoToStaticBall](https://bitbucket.com/herinson/ibots2d/wiki/Bhv_GoToStaticBall)  
+
+3. Roles   
+[Introdução](https://bitbucket.com/herinson/ibots2d/wiki/Roles)   
+   
+4. Others   
+[Strategy](https://bitbucket.com/herinson/ibots2d/wiki/Strategy)   
+
+**_librcsc_**   
+>1. Geometry   
+
+[AngleDeg](https://bitbucket.com/herinson/ibots2d/wiki/AngleDeg)  
+
+[Line2D](https://bitbucket.com/herinson/ibots2d/wiki/Line2D)  
+
+[Matrix2D](https://bitbucket.com/herinson/ibots2d/wiki/Matrix2D)  
+
+[Ray2D](https://bitbucket.com/herinson/ibots2d/wiki/Ray2D)  
+
+[Triangulation](https://bitbucket.com/herinson/ibots2d/wiki/Triangulation)  
+
+[Vector2D](https://bitbucket.com/herinson/ibots2d/wiki/Vector2D)  
+
+[Voronoi Diagram](https://bitbucket.com/herinson/ibots2d/wiki/VoronoiDiagram)  
+
+  
+2. Player   
+
+[BallObject](https://bitbucket.com/herinson/ibots2d/wiki/BallObject)  
+
+[PlayerObject](https://bitbucket.com/herinson/ibots2d/wiki/PlayerObject)  
+
+[PlayerAgent](https://bitbucket.com/herinson/ibots2d/wiki/PlayerAgent)  
+
+[SoccerAction](https://bitbucket.com/herinson/ibots2d/wiki/SoccerAction)  
+
+[Localization](https://bitbucket.com/herinson/ibots2d/wiki/Localization)  
+
+[SeeState](https://bitbucket.com/herinson/ibots2d/wiki/SeeState)  
+
+[InterceptTable](https://bitbucket.com/herinson/ibots2d/wiki/InterceptTable)  
+
+   
+3. Others   
+
+[MathUtil](https://bitbucket.com/herinson/ibots2d/wiki/MathUtil)  
+
+[SoccerMath](https://bitbucket.com/herinson/ibots2d/wiki/SoccerMath)  
