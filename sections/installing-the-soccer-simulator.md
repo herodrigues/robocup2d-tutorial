@@ -131,4 +131,4 @@ $ sudo make install
 ### Conclusion
 
 With all done, it is time to run a match and test if everything has done with no errrors. 
-See the next tutorial [here](https://github.com/robocup2d/robocup2d/wiki/Running-a-match-with-agent2d).
+See the next tutorial [here](https://github.com/RoboCup2D/tutorial/blob/master/sections/running-a-match-with-agent2d.md).
