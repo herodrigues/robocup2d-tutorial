@@ -5,7 +5,7 @@ Muito últi para calcular trajetórias de jogadores ou da bola e para verificar 
 
 A imagem abaixo mostra uma reta no plano bidimensional e um ponto perpendicular à ela:
 
-![line2d.png](https://github.com/repo/qM7nyp/images/202542245-line2d.png)
+![line2d.png](https://github.com/RoboCup2D/tutorial/raw/master/images/line2d.png)
 
 Métodos úteis dessa classe:
 ```cpp
