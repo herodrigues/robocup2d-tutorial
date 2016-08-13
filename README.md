@@ -1,3 +1,5 @@
+# Welcome to the non-official 2D Soccer Simulation tutorial for RoboCup
+
 **NOTE**:
 - In all articles, the character $ represents a terminal. Thus, whenever this symbol is shown, it means that what comes next should be typed in a terminal. 
 
@@ -7,75 +9,75 @@
 
 - **Tutorials:**  
 
-[1 - Installing the simulator](https://github.com/robocup2d/robocup2d/wiki/Instalando-o-simulador)  
+[1 - Installing the simulator](https://github.com/robocup2d/tutorial/blob/master/sections/Installing-the-simulator.md)  
 
-[2 - Running a match with agent2d](https://github.com/robocup2d/robocup2d/wiki/Rodando-uma-partida-com-o-agent2d)  
+[2 - Running a match with agent2d](https://github.com/robocup2d/tutorial/blob/master/sections/Running-a-match-with-agent2d.md)  
 
-[3 - Configuring the trainer](https://github.com/robocup2d/robocup2d/wiki/Configuring-the-trainer)  
+[3 - Configuring the trainer](https://github.com/robocup2d/tutorial/blob/master/sections/Configuring-the-trainer.md)  
 
-[4 - Creating formations with fedit](https://github.com/robocup2d/robocup2d/wiki/Creating-formations-with-fedit)  
+[4 - Creating formations with fedit](https://github.com/robocup2d/tutorial/blob/master/sections/Creating-formations-with-fedit.md)  
 
 - **Analyses, statistics and debugging**:  
 
 - **Utility**:   
 
-[1 - Autotools tutorial](https://github.com/robocup2d/robocup2d/wiki/Autotools-tutorial)  
+[1 - Autotools tutorial](https://github.com/robocup2d/tutorial/blob/master/sections/Autotools-tutorial.md)  
 
-[2 - git SCM: configuring, branches, commits and Github](https://github.com/robocup2d/robocup2d/wiki/git-SCM:-configuring,-branches-and-Github) 
+[2 - Git and Github](https://github.com/robocup2d/tutorial/blob/master/sections/git-and-github.md) 
  
-[3 - Useful script to run server, monitor and teams simultaneously](https://github.com/robocup2d/robocup2d/wiki/Useful-script-to-run-server,-monitor-and-teams-simultaneously)  
+[3 - Script to run server, monitor and teams simultaneously](https://github.com/robocup2d/tutorial/blob/master/sections/script-to-run-server-monitor-and-teams-simultaneously.md)  
 
-[4 - Script to run many teams](https://github.com/robocup2d/robocup2d/wiki/Script-to-run-many-teams)  
+[4 - Script to run many teams](https://github.com/robocup2d/tutorial/blob/master/sections/Script-to-run-many-teams.md)  
 
-[5 - SoccerWindow2 as a debugger](https://github.com/robocup2d/robocup2d/wiki/SoccerWindow2-as-a-debugger)  
+[5 - SoccerWindow2 as a debugger](https://github.com/robocup2d/tutorial/blob/master/sections/SoccerWindow2-as-a-debugger.md)  
 
-- ** Team development **
+- **Team development**
 
-[1. Dynamic positioning](https://github.com/robocup2d/robocup2d/wiki/Dynamic-positioning)
+[1. Dynamic positioning](https://github.com/robocup2d/tutorial/blob/master/sections/Dynamic-positioning.md)
 
 - **Classes**:  
 
 **_agent2D_**   
 > 1. Chain actions  
-[ActionGenerator](https://github.com/robocup2d/robocup2d/wiki/ActionGenerator)  
-[ActionStatePair](https://github.com/robocup2d/robocup2d/wiki/ActionStatePair)  
-[CooperativeAction](https://github.com/robocup2d/robocup2d/wiki/CooperativeAction)  
-[FieldAnalyzer](https://github.com/robocup2d/robocup2d/wiki/FieldAnalyzer)  
-[PredictState](https://github.com/robocup2d/robocup2d/wiki/PredictState)  
+[ActionGenerator](https://github.com/robocup2d/tutorial/blob/master/sections/ActionGenerator.md)  
+[ActionStatePair](https://github.com/robocup2d/tutorial/blob/master/sections/ActionStatePair.md)  
+[CooperativeAction](https://github.com/robocup2d/tutorial/blob/master/sections/CooperativeAction.md)  
+[FieldAnalyzer](https://github.com/robocup2d/tutorial/blob/master/sections/FieldAnalyzer.md)  
+[PredictState](https://github.com/robocup2d/tutorial/blob/master/sections/PredictState.md)  
  
 
 >2. Behaviours   
-[Bhv_BasicMove](https://github.com/robocup2d/robocup2d/wiki/Bhv_BasicMove)  
-[Bhv_BasicOffensiveKick](https://github.com/robocup2d/robocup2d/wiki/Bhv_BasicOffensiveKick)  
-[Bhv_BasicTackle](https://github.com/robocup2d/robocup2d/wiki/Bhv_BasicTackle)  
-[Bhv_GoToStaticBall](https://github.com/robocup2d/robocup2d/wiki/Bhv_GoToStaticBall)  
+[Bhv_BasicMove](https://github.com/robocup2d/tutorial/blob/master/sections/Bhv_BasicMove.md)  
+[Bhv_BasicOffensiveKick](https://github.com/robocup2d/tutorial/blob/master/sections/Bhv_BasicOffensiveKick.md)  
+[Bhv_BasicTackle](https://github.com/robocup2d/tutorial/blob/master/sections/Bhv_BasicTackle.md)  
+[Bhv_GoToStaticBall](https://github.com/robocup2d/tutorial/blob/master/sections/Bhv_GoToStaticBall.md)  
 
 
 >3. Roles   
-[Introdução](https://github.com/robocup2d/robocup2d/wiki/Roles)   
+[Introduction](https://github.com/robocup2d/tutorial/blob/master/sections/Roles.md)   
    
 >4. Others   
-[Strategy](https://github.com/robocup2d/robocup2d/wiki/Strategy)   
+[Strategy](https://github.com/robocup2d/tutorial/blob/master/sections/Strategy.md)   
 
 **_librcsc_**   
 >1. Geometry   
-[AngleDeg](https://github.com/robocup2d/robocup2d/wiki/AngleDeg)  
-[Line2D](https://github.com/robocup2d/robocup2d/wiki/Line2D)  
-[Matrix2D](https://github.com/robocup2d/robocup2d/wiki/Matrix2D)  
-[Ray2D](https://github.com/robocup2d/robocup2d/wiki/Ray2D)  
-[Triangulation](https://github.com/robocup2d/robocup2d/wiki/Triangulation)  
-[Vector2D](https://github.com/robocup2d/robocup2d/wiki/Vector2D)  
-[Voronoi Diagram](https://github.com/robocup2d/robocup2d/wiki/VoronoiDiagram)  
+[AngleDeg](https://github.com/robocup2d/tutorial/blob/master/sections/AngleDeg.md)  
+[Line2D](https://github.com/robocup2d/tutorial/blob/master/sections/Line2D.md)  
+[Matrix2D](https://github.com/robocup2d/tutorial/blob/master/sections/Matrix2D.md)  
+[Ray2D](https://github.com/robocup2d/tutorial/blob/master/sections/Ray2D.md)  
+[Triangulation](https://github.com/robocup2d/tutorial/blob/master/sections/Triangulation.md)  
+[Vector2D](https://github.com/robocup2d/tutorial/blob/master/sections/Vector2D.md)  
+[Voronoi Diagram](https://github.com/robocup2d/tutorial/blob/master/sections/VoronoiDiagram.md)  
 
 >2. Player   
-[BallObject](https://github.com/robocup2d/robocup2d/wiki/BallObject)  
-[PlayerObject](https://github.com/robocup2d/robocup2d/wiki/PlayerObject)  
-[PlayerAgent](https://github.com/robocup2d/robocup2d/wiki/PlayerAgent)  
-[SoccerAction](https://github.com/robocup2d/robocup2d/wiki/SoccerAction)  
-[Localization](https://github.com/robocup2d/robocup2d/wiki/Localization)  
-[SeeState](https://github.com/robocup2d/robocup2d/wiki/SeeState)  
-[InterceptTable](https://github.com/robocup2d/robocup2d/wiki/InterceptTable)  
+[BallObject](https://github.com/robocup2d/tutorial/blob/master/sections/BallObject.md)  
+[PlayerObject](https://github.com/robocup2d/tutorial/blob/master/sections/PlayerObject.md)  
+[PlayerAgent](https://github.com/robocup2d/tutorial/blob/master/sections/PlayerAgent.md)  
+[SoccerAction](https://github.com/robocup2d/tutorial/blob/master/sections/SoccerAction.md)  
+[Localization](https://github.com/robocup2d/tutorial/blob/master/sections/Localization.md)  
+[SeeState](https://github.com/robocup2d/tutorial/blob/master/sections/SeeState.md)  
+[InterceptTable](https://github.com/robocup2d/tutorial/blob/master/sections/InterceptTable.md)  
 
 >3. Others   
-[MathUtil](https://github.com/robocup2d/robocup2d/wiki/MathUtil)  
-[SoccerMath](https://github.com/robocup2d/robocup2d/wiki/SoccerMath)  
+[MathUtil](https://github.com/robocup2d/tutorial/blob/master/sections/MathUtil.md)  
+[SoccerMath](https://github.com/robocup2d/tutorial/blob/master/sections/SoccerMath.md)  
