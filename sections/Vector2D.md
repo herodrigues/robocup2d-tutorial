@@ -4,7 +4,7 @@ Essa classe possui métodos de extrema importância para o entendimento do simul
 
 Um Vector2D nada mais é que um vetor em um espaço bidimensional como mostrado na figura:
 
-![vector2d.png](https://github.com/repo/qM7nyp/images/3974239038-vector2d.png)
+![vector2d.png](https://github.com/RoboCup2D/tutorial/raw/master/images/vector2d.png)
 
 Onde _O_ é a origem, ou seja, o centro do campo. Não se esqueça que no eixo de coordenadas do simulador, o eixo y é invertido. Portanto, o quadrante onde se encontra os pontos da figura é x e y positivo.
 
