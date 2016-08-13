@@ -1,4 +1,4 @@
-**Tutorial anterior: [Rodando uma partida com o agent2D](https://github.com/robocup2d/wiki/wiki/Rodando-uma-partida-com-o-agent2d)**
+**Tutorial anterior: [Rodando uma partida com o agent2D](https://github.com/RoboCup2D/tutorial/blob/master/sections/running-a-match-with-agent2d.md)**
 
 O SoccerWindow2 é um poderoso monitor que pode ser usado como debugger inclusive com a partida rodando.
 
@@ -30,8 +30,8 @@ _Obs: como o rcssserver não foi iniciado em auto_mode=on, será preciso dar Kic
 
 A imagem abaixo mostra uma partida em pausa no ciclo 2810 com o debug ativo para toda a equipe iBots2D:
 
-![](https://raw.githubusercontent.com/robocup2d/wiki/master/debug-view.png)
-> Imagem maior [aqui](https://raw.githubusercontent.com/robocup2d/wiki/master/debug-view.png)
+![](https://github.com/RoboCup2D/tutorial/raw/master/images/agent2d-basic-formation.png)
+> Imagem maior [aqui](https://github.com/RoboCup2D/tutorial/raw/master/images/agent2d-basic-formation.png)
 
 
 - Os círculos azuis representam as últimas posições conhecidas dos adversários pelo jogador número 7 (jogador que está com a bola).
