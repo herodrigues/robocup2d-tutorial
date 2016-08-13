@@ -2,7 +2,7 @@ Conjunto de classes para definir qual a função do jogador e o que ele deve faz
 
 Cada jogador tem uma _role_ e isso depender da posição jogador. No código do Agent2D 3.1.1, existem as seguintes _roles_ na formação básica 4-3-3 conforme a figura abaixo:
 
-![agent2d-basic-formation.png](https://github.com/repo/qM7nyp/images/2726709993-agent2d-basic-formation.png)
+![agent2d-basic-formation.png](https://github.com/RoboCup2D/tutorial/raw/master/images/agent2d-basic-formation.png)
 
 _1 Goalie - Goleiro_
 
@@ -58,9 +58,9 @@ RoleCenterBack::execute( PlayerAgent * agent )
 O método acima verifica se o jogador que está com a bola tem condições de chutá-la e se a distância dos companheiros de equipe para a bola é menor que sua própria distância. Se estas duas condições forem satisfeitas, isso indica que o jogador deve se mover com a bola, caso contrário, ele deve passar a bola para um companheiro de equipe.
 
 Vamos supor que se queria testar o passe em profundidade. Para isso, temos o Bhv_ThroughPassKick onde está implementado todo o cálculo do passe em profundidade.
-Ainda, queremos fazer o passe somente com os jogadores ofensivos de meio-campo (_role_: OffensiveHalf). Então, basta ir no método doKick() da classe [RoleOffensiveHalf](https://github.com/herinson/robocup2d/wiki/RoleOffensiveHalf) e verificar em quais _BallArea's_ o jogador pode executar o passe em profundidade. 
+Ainda, queremos fazer o passe somente com os jogadores ofensivos de meio-campo (_role_: OffensiveHalf). Então, basta ir no método doKick() da classe [RoleOffensiveHalf](https://github.com/RoboCup2D/tutorial/blob/master/sections/RoleOffensiveHalf.md) e verificar em quais _BallArea's_ o jogador pode executar o passe em profundidade. 
 
-Lembre-se, antes de implementar seu behaviour, você deve entender como funciona a classe [Strategy](https://github.com/herinson/robocup2d/wiki/Strategy).
+Lembre-se, antes de implementar seu behaviour, você deve entender como funciona a classe [Strategy](https://github.com/RoboCup2D/tutorial/blob/master/sections/Strategy.md).
 
 Por exemplo:
 ```cpp
