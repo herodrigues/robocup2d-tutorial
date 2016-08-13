@@ -9,31 +9,29 @@
 
 - **Tutorials:**  
 
-[1 - Installing the simulator](https://github.com/robocup2d/tutorial/blob/master/sections/Installing-the-simulator.md)  
+[1 - Installing the simulator](https://github.com/RoboCup2D/tutorial/blob/master/sections/installing-the-soccer-simulator.md)  
 
-[2 - Running a match with agent2d](https://github.com/robocup2d/tutorial/blob/master/sections/Running-a-match-with-agent2d.md)  
+[2 - Running a match with agent2d](https://github.com/robocup2d/tutorial/blob/master/sections/running-a-match-with-agent2d.md)  
 
-[3 - Configuring the trainer](https://github.com/robocup2d/tutorial/blob/master/sections/Configuring-the-trainer.md)  
+[3 - Configuring the trainer](https://github.com/robocup2d/tutorial/blob/master/sections/configuring-the-trainer.md)  
 
-[4 - Creating formations with fedit](https://github.com/robocup2d/tutorial/blob/master/sections/Creating-formations-with-fedit.md)  
+[4 - Creating formations with fedit](https://github.com/robocup2d/tutorial/blob/master/sections/formations-with-fedit.md)  
 
 - **Analyses, statistics and debugging**:  
 
 - **Utility**:   
 
-[1 - Autotools tutorial](https://github.com/robocup2d/tutorial/blob/master/sections/Autotools-tutorial.md)  
+[1 - Autotools tutorial](https://github.com/robocup2d/tutorial/blob/master/sections/autotools-tutorial.md)  
 
-[2 - Git and Github](https://github.com/robocup2d/tutorial/blob/master/sections/git-and-github.md) 
- 
-[3 - Script to run server, monitor and teams simultaneously](https://github.com/robocup2d/tutorial/blob/master/sections/script-to-run-server-monitor-and-teams-simultaneously.md)  
+[2 - Script to run server, monitor and teams simultaneously](https://github.com/RoboCup2D/tutorial/blob/master/sections/script-for-running-server-and-match.md)  
 
-[4 - Script to run many teams](https://github.com/robocup2d/tutorial/blob/master/sections/Script-to-run-many-teams.md)  
+[3 - Script to run many teams](https://github.com/robocup2d/tutorial/blob/master/sections/script-for-several-teams.md)  
 
-[5 - SoccerWindow2 as a debugger](https://github.com/robocup2d/tutorial/blob/master/sections/SoccerWindow2-as-a-debugger.md)  
+[4 - SoccerWindow2 as a debugger](https://github.com/robocup2d/tutorial/blob/master/sections/soccerwindow2-debugger.md)  
 
 - **Team development**
 
-[1. Dynamic positioning](https://github.com/robocup2d/tutorial/blob/master/sections/Dynamic-positioning.md)
+[1. Dynamic positioning](https://github.com/robocup2d/tutorial/blob/master/sections/dynamic-positioning.md)
 
 - **Classes**:  
 
