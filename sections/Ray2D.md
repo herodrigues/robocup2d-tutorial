@@ -4,7 +4,7 @@ Classe para representação de um raio traçado a partir de uma origem _O_ qualq
 
 Por exemplo, pode ser utilizada quando se deseja analisar se existe algum adversário no raio que se forma entre um jogador e a bola ou qualquer outro ponto.
 
-![ray_2d.gif](https://github.com/repo/qM7nyp/images/2476089105-ray_2d.gif)
+![ray_2d.gif](https://github.com/RoboCup2D/tutorial/raw/master/images/ray_2d.gif)
 
 Métodos úteis:
 ```cpp
