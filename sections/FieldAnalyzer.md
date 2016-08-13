@@ -3,9 +3,9 @@ Provavelmente, a classe mais importante para entender o funcionamento do agent2D
 Uma explicação bem simples do diagrama de Voronoi pode ser encontrada aqui: 
 http://www.ime.usp.br/~freitas/gc/voronoi.html
 
-Para entender o funcionamento do código do diagrama de Voronoi da librcsc, veja a classe [Voronoi Diagram](https://github.com/robocup2d/robocup2d/wiki/VoronoiDiagram).
+Para entender o funcionamento do código do diagrama de Voronoi da librcsc, veja a classe [Voronoi Diagram](https://github.com/RoboCup2D/tutorial/blob/master/sections/VoronoiDiagram.md).
 
-No método actionImpl() do [SamplePlayer](https://github.com/robocup2d/robocup2d/wiki/SamplePlayer) (que é chamado a cada ciclo do jogo), a instância da classe FieldAnalyzer é chamada já na segunda linha. Antes dela, a chamada responsável pela estratégia de jogo também atualizada. (Mais detalhes, veja a classe [Strategy](https://github.com/robocup2d/robocup2d/wiki/Strategy)).
+No método actionImpl() do [SamplePlayer](https://github.com/RoboCup2D/tutorial/blob/master/sections/SamplePlayer.md) (que é chamado a cada ciclo do jogo), a instância da classe FieldAnalyzer é chamada já na segunda linha. Antes dela, a chamada responsável pela estratégia de jogo também atualizada. (Mais detalhes, veja a classe [Strategy](https://github.com/RoboCup2D/tutorial/blob/master/sections/Strategy.md)).
 
 ```cpp
 void
