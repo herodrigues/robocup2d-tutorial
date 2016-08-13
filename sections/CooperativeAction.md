@@ -26,4 +26,4 @@ DistCompare( const rcsc::Vector2D & pos )
 ```
 
 Operador () sobrecarregado para passar dois parâmetros shared_ptr do tipo da própria classe CooperativeAction.
-Esse função é usada para comparar duas instâncias da classe CooperativeAction e determinar qual é o maior ou menor valor das distâncias euclidianas entre o vector2D targetPoint (ponto final da ação) e o ponto passado como parâmetro no método-construtor DistCompare da struct de mesmo nome. (**Veja:** dist2 em [Vector2D](https://github.com/robocup2d/robocup2d/wiki/Vector2D))
+Esse função é usada para comparar duas instâncias da classe CooperativeAction e determinar qual é o maior ou menor valor das distâncias euclidianas entre o vector2D targetPoint (ponto final da ação) e o ponto passado como parâmetro no método-construtor DistCompare da struct de mesmo nome. (**Veja:** dist2 em [Vector2D](https://github.com/RoboCup2D/tutorial/blob/master/sections/Vector2D.md))
