@@ -50,7 +50,7 @@ Locate this line:
 config_dir="${DIR}/formations-train"
 ```
 
-By doing this, you will be using your own formations. If you do not know how to create and edit formations, read the tutorial [Creating formations with fedit](https://github.com/robocup2d/robocup2d/wiki/Creating-formations-with-fedit).
+By doing this, you will be using your own formations. If you do not know how to create and edit formations, read the tutorial [Creating formations with fedit](https://github.com/RoboCup2D/tutorial/blob/master/sections/formations-with-fedit.md).
 Obviously, you can use the formations in the folder formations-dt. However, as the goal here is to use your own strategy, it is recommend that you create your formations.
 
 Locate this line:
