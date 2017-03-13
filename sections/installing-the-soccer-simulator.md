@@ -47,7 +47,7 @@ $ sudo make install
 
 To install the rcssmonitor, go to the end of this article and follow the same steps to install the soccerwindow2 monitor.
 
-**IMPORTANT: The steps above for Debian 7 where not tested in other linux distributions, but you can give a try.**
+**IMPORTANT: The steps above for Debian 7 were not tested in other linux distributions, but you can give a try.**
 
 ____________________________________________________________________________________
 
