@@ -22,10 +22,7 @@ $ fedit2
 
 **Troubleshoot**:
 
-If you got this error (and you probably will):
-```bash
-unrecognized command line option ‘-pthread-lQtGui’
-```
+1. unrecognized command line option ‘-pthread-lQtGui’
 
 Open the **configure** file, locate the line below and put a space between $PKG_CONFIG the variables, so it will be like this:
 ```
@@ -33,3 +30,14 @@ QT4_LDADD="$($PKG_CONFIG --static --libs-only-other $QT4_REQUIRED_MODULES) $($PK
 ```
 
 Source: http://askubuntu.com/a/892432/664657
+
+2. error while loading shared libraries: librcsc_agent.so.7
+
+Run
+```
+$ sudo ldconfig -v
+```
+
+Source: http://stackoverflow.com/questions/33506751/start-sh-dosent-work-in-agent2d-robocup
+
+
