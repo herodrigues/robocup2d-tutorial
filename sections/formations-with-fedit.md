@@ -1,21 +1,39 @@
-**Instalando o fedit**
+$ **Installing fedit**
 
-Faça o download do fedit no repositório oficial da RoboCup ou clique [aqui](http://en.sourceforge.jp/projects/rctools/downloads/48791/fedit2-0.0.0.tar.gz/).
+Download fedit in the Robocup's official repository [here]http://en.sourceforge.jp/projects/rctools/downloads/48791/fedit2-0.0.0.tar.gz/).
 
-Abra um terminal (CTRL+ALT+T), extraia o arquivo entre na na pasta logo após:
+Open a terminal (CTRL+ALT+T), extract the files and execute:
 ```bash
 $ tar -xvpf fedit2-0.0.0.tar.gz
 $ cd fedit2-0.0.0
 ```
 
-Entre com os seguintes comandos:
+Then:
 ```bash
 $ ./configure
 $ make
 $ sudo make install
 ```
 
-Se tudo der certo, abra o fedit: 
+Finally: 
 ```bash
 $ fedit2
 ```
+
+**Troubleshoot**:
+
+If you got this error (and you probably will):
+```bash
+unrecognized command line option ‘-pthread-lQtGui’
+```
+
+You can fix it by doing the following commands:
+```
+$ make clean
+$ ./configure
+$ sed -i 's/-pthread-lQtGui/-pthread -lQtGui/' config.status*
+$ sed -i 's/-pthread-lQtGui/-pthread -lQtGui/' Makefile*
+```
+Now we can go back and repeat the commands make and sudo make install.
+
+Source: http://askubuntu.com/questions/810726/g-5-real-error-unrecognized-command-line-option-pthread-lqtgui
