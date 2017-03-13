@@ -134,16 +134,12 @@ If you got this error (and you probably will):
 unrecognized command line option ‘-pthread-lQtGui’
 ```
 
-You can fix it by doing the following commands:
+Open the **configure** file, locate the line below and put a space between $PKG_CONFIG the variables, so it will be like this:
 ```
-$ make clean
-$ ./configure
-$ sed -i 's/-pthread-lQtGui/-pthread -lQtGui/' config.status*
-$ sed -i 's/-pthread-lQtGui/-pthread -lQtGui/' Makefile*
+QT4_LDADD="$($PKG_CONFIG --static --libs-only-other $QT4_REQUIRED_MODULES) $($PKG_CONFIG --static --libs-only-l $QT4_REQUIRED_MODULES)"
 ```
-Now we can go back and repeat the command sudo make install.
 
-Source: http://askubuntu.com/questions/810726/g-5-real-error-unrecognized-command-line-option-pthread-lqtgui
+Source: http://askubuntu.com/a/892432/664657
 
 ### Conclusion
 
