@@ -141,7 +141,7 @@ $ ./configure
 $ sed -i 's/-pthread-lQtGui/-pthread -lQtGui/' config.status*
 $ sed -i 's/-pthread-lQtGui/-pthread -lQtGui/' Makefile*
 ```
-Now we can go back and repeat the commands make and sudo make install.
+Now we can go back and repeat the command sudo make install.
 
 Source: http://askubuntu.com/questions/810726/g-5-real-error-unrecognized-command-line-option-pthread-lqtgui
 
