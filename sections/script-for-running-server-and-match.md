@@ -1,17 +1,17 @@
-Crie um arquivo .sh na pasta de sua preferência e coloque o código abaixo:
+Create a .sh file in the folder of your preference and insert the following lines:
 ```bash
 #!/bin/bash
 
-rcssserver server::auto_mode=on &  # inicia o jogo automaticamente
+rcssserver server::auto_mode=on &  # automatically start the game
 
 cd ${DIR_OUR}
-make        # Compila o código caso você tenha feito alguma alteração
-./start.sh # ou ./start.sh -n x  onde x é o número de jogadores que você deseja carregar
+make        
+./start.sh # ou ./start.sh -n x  where x is the number of players you want to load
 
 cd ${DIR_OPP}
 ./start.sh # ou ./start.sh -n x  onde x é o número de jogadores que você deseja carregar
 
-soccerwindow2 --hide-view-area --hide-stamina # ou rcssmonitor
+soccerwindow2 --hide-view-area --hide-stamina # or rcssmonitor
 
 set -e
 function stop_server {   
@@ -20,13 +20,15 @@ function stop_server {
 
 trap stop_server EXIT
 ```
-Salve com o nome de sua preferência e depois execute em um terminal o seguinte comando:
+
+Save this file and execute this command:
 ```bash
-$ chmod a+x seu_script.sh
+$ chmod a+x your_script.sh
 ```
 
-Agore é só rodar o script:
+Now, you just need to run:
 ```bash
-$ ./seu_script.sh /caminho/para/pasta/src/da/sua/equipe/ /caminho/para/pasta/src/da/equipe/adversaria/
+$ ./script.sh /path/to/the/src/folder/of/your/team /path/to/the/src/folder/of/the/opponent/team
 ```
-Feito isso, quando você finalizar o script com Ctrl+C no terminal, o processo rcssserver será finalizado automaticamente.
+
+By doing that, when you stop your script with Ctrl+C in a terminal, the rcssserver will be automatically killed
