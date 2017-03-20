@@ -15,7 +15,7 @@ No menu, abra _Monitor > Launcher_ Dialog ou simplesmente Ctrl+X:
 Coloque o caminho para o script start.sh (fica na pasta src) dos dois times seguido dos argumentos _--debug --debug-connect-server_. Se deseja visualizar informações das duas equipes, coloque os argumentos de debug nas duas.
 
 As equipes entrarão em campo e o servidor será iniciado. 
-As informação de debug ainda não aparece, pois é necessário escolher em qual membro ou membros das equipes você desejar manter o foco.
+A informação de debug ainda não aparece, pois é necessário escolher em qual membro ou membros das equipes você desejar manter o foco.
 
 No menu, vá em _Debug > View Preference_ ou simplesmente Ctrl+V. Na aba _Object_, vá na seção _Player Selection_ e escolha entre os seguintes items:
 - **Auto left**: visualiza informações de todos os jogadores do time que está do lado esquerdo do campo
