@@ -30,8 +30,8 @@ _Obs: como o rcssserver não foi iniciado em auto_mode=on, será preciso dar Kic
 
 A imagem abaixo mostra uma partida em pausa no ciclo 2810 com o debug ativo para toda a equipe iBots2D:
 
-![](https://github.com/RoboCup2D/tutorial/raw/master/images/agent2d-basic-formation.png)
-> Imagem maior [aqui](https://github.com/RoboCup2D/tutorial/raw/master/images/agent2d-basic-formation.png)
+![](https://github.com/RoboCup2D/tutorial/raw/master/images/debug-view.png)
+> Imagem maior [aqui](https://github.com/RoboCup2D/tutorial/raw/master/images/debug-view.png)
 
 
 - Os círculos azuis representam as últimas posições conhecidas dos adversários pelo jogador número 7 (jogador que está com a bola).
