@@ -12,7 +12,7 @@ _Se não deseja executar o soccerwindow pelo terminal, você pode adicioná-lo n
 
 No menu, abra _Monitor > Launcher_ Dialog ou simplesmente Ctrl+X:
 
-Coloque o caminho para o script start.sh (fica na pasta src) dos dois times seguido dos argumentos _--debug --debug-connect-server_.
+Coloque o caminho para o script start.sh (fica na pasta src) dos dois times seguido dos argumentos _--debug --debug-server-connect_.
 
 As equipes entrarão em campo e o servidor será iniciado. A informação de debug aparecerá imediatamente na tela. Se necessário,  você poderá escolher em qual membro ou membros das equipes você desejar manter o foco.
 
@@ -38,4 +38,4 @@ A imagem abaixo mostra uma partida em pausa no ciclo 2810 com o debug ativo para
 
 Todas essas informações podem ser selecionadas no menu em _Debug > Debug Message_.
 
-Para ver o debug de um replay de uma partida, você terá que adicionar antes a flag _--log-dir DIRECTORY_ no script start.sh da equipe juntamente com  _--debug --debug-connect-server_ (onde DIRECTORY é o diretório onde você deseja salvar os logs). Com a partida finalizada, basta abrir o arquivo RCG da partida e os logs do debug view pelo menu File.
+Para ver o debug de um replay de uma partida, você terá que adicionar antes a flag _--log-dir DIRECTORY_ no script start.sh da equipe juntamente com  _--debug --debug-server-connect_ (onde DIRECTORY é o diretório onde você deseja salvar os logs). Com a partida finalizada, basta abrir o arquivo RCG da partida e os logs do debug view pelo menu File.
