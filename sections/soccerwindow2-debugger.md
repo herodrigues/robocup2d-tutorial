@@ -51,3 +51,5 @@ Salvar os logs: File > Save Debug View
 Para realizar o debug após o término da partida, abra o arquivo rcg e os logs:
 File > Open rcg file
 File > Open debug view
+
+ --log-dir DIRECTORY          specifies debug log directory (default: /tmp) (should be writable)
