@@ -12,7 +12,7 @@ _Se não deseja executar o soccerwindow pelo terminal, você pode adicioná-lo n
 
 No menu, abra _Monitor > Launcher_ Dialog ou simplesmente Ctrl+X:
 
-Coloque o caminho para o script start.sh (fica na pasta src) dos dois times seguido dos argumentos _--debug --debug-connect-server_. Se deseja visualizar informações das duas equipes, coloque os argumentos de debug nas duas.
+Coloque o caminho para o script start.sh (fica na pasta src) dos dois times seguido dos argumentos _--debug --debug-connect-server --log-dir DIRECTORY_, onde DIRECTORY é a pasta onde você deseja salvar os logs de debug. Se deseja visualizar informações das duas equipes, coloque os argumentos de debug nas duas.
 
 As equipes entrarão em campo e o servidor será iniciado. 
 A informação de debug ainda não aparece, pois é necessário escolher em qual membro ou membros das equipes você desejar manter o foco.
@@ -43,13 +43,6 @@ A imagem abaixo mostra uma partida em pausa no ciclo 2810 com o debug ativo para
 
 Todas essas informações podem ser selecionadas no menu em _Debug > Debug Message_.
 
-Após o término da partida, é preciso salvar o arquivo rcg da partida e os arquivos do debug. NÃO FINALIZE O PROCESSO DO RCSSSERVER!
+Para ver o debug em tempo real da partida, basta ir em _File > Open debug view_ e selecionar o diretório que você passou como paramêtro em _--log-dir_.
 
-Salvar o arquivo rcg: File > Save rcg file
-Salvar os logs: File > Save Debug View
-
-Para realizar o debug após o término da partida, abra o arquivo rcg e os logs:
-File > Open rcg file
-File > Open debug view
-
- --log-dir DIRECTORY          specifies debug log directory (default: /tmp) (should be writable)
+É possível também visualizar o log de um replay de uma partida. Para isso, abra o rcg da partida desejada e logo depois abra o diretório onde você salvou o debug view.
