@@ -12,10 +12,9 @@ _Se não deseja executar o soccerwindow pelo terminal, você pode adicioná-lo n
 
 No menu, abra _Monitor > Launcher_ Dialog ou simplesmente Ctrl+X:
 
-Coloque o caminho para o script start.sh (fica na pasta src) dos dois times seguido dos argumentos _--debug --debug-connect-server --log-dir DIRECTORY_, onde DIRECTORY é a pasta onde você deseja salvar os logs de debug. Se deseja visualizar informações das duas equipes, coloque os argumentos de debug nas duas.
+Coloque o caminho para o script start.sh (fica na pasta src) dos dois times seguido dos argumentos _--debug --debug-connect-server_.
 
-As equipes entrarão em campo e o servidor será iniciado. 
-A informação de debug ainda não aparece, pois é necessário escolher em qual membro ou membros das equipes você desejar manter o foco.
+As equipes entrarão em campo e o servidor será iniciado. A informação de debug aparecerá imediatamente na tela. Se necessário,  você poderá escolher em qual membro ou membros das equipes você desejar manter o foco.
 
 No menu, vá em _Debug > View Preference_ ou simplesmente Ctrl+V. Na aba _Object_, vá na seção _Player Selection_ e escolha entre os seguintes items:
 - **Auto left**: visualiza informações de todos os jogadores do time que está do lado esquerdo do campo
@@ -25,14 +24,10 @@ No menu, vá em _Debug > View Preference_ ou simplesmente Ctrl+V. Na aba _Object
 - **Right number X**: visualiza informações do jogador número X do time que está do lado direito do campo 
 - **Right coach**: visualiza informações do técnico do time que está do lado direito do campo 
 
-Pressione Ctrl+K para iniciar a partida.
-_Obs: como o rcssserver não foi iniciado em auto_mode=on, será preciso dar Kick off na partida novamente após 3000 ciclos (meio-tempo da partida)._
-
 A imagem abaixo mostra uma partida em pausa no ciclo 2810 com o debug ativo para toda a equipe iBots2D:
 
 ![](https://github.com/RoboCup2D/tutorial/raw/master/images/debug-view.png)
 > Imagem maior [aqui](https://github.com/RoboCup2D/tutorial/raw/master/images/debug-view.png)
-
 
 - Os círculos azuis representam as últimas posições conhecidas dos adversários pelo jogador número 7 (jogador que está com a bola).
 - Os círculos verdes representam as últimas posições conhecidas dos companheiros de equipe pelo jogador número 7 (jogador que está com a bola).
@@ -43,6 +38,4 @@ A imagem abaixo mostra uma partida em pausa no ciclo 2810 com o debug ativo para
 
 Todas essas informações podem ser selecionadas no menu em _Debug > Debug Message_.
 
-Para ver o debug em tempo real da partida, basta ir em _File > Open debug view_ e selecionar o diretório que você passou como paramêtro em _--log-dir_.
-
-É possível também visualizar o log de um replay de uma partida. Para isso, abra o rcg da partida desejada e logo depois abra o diretório onde você salvou o debug view.
+Para ver o debug de um replay de uma partida, você terá que adicionar antes a flag _--log-dir DIRECTORY_ no script start.sh da equipe juntamente com  _--debug --debug-connect-server_ (onde DIRECTORY é o diretório onde você deseja salvar os logs). Com a partida finalizada, basta abrir o arquivo RCG da partida e os logs do debug view pelo menu File.
