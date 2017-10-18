@@ -1,4 +1,4 @@
-To do this tutorial, you must had read the [previous tutorial](https://github.com/robocup2d/robocup2d/wiki/Instalando-the-soccer-simulator).
+To do this tutorial, you must have read the [previous tutorial](https://github.com/robocup2d/robocup2d/wiki/Instalando-the-soccer-simulator).
 
 ### Running the server and monitor
 
