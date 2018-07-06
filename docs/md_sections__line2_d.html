@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RoboCup2D Tutorial: Main Page</title>
+<title>RoboCup2D Tutorial: Line2D</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -77,7 +77,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('index.html','');});
+$(document).ready(function(){initNavTree('md_sections__line2_d.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -97,13 +97,17 @@ $(document).ready(function(){initNavTree('index.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">RoboCup2D Tutorial Documentation</div>  </div>
+<div class="title">Line2D </div>  </div>
 </div><!--header-->
 <div class="contents">
-<ul><li><a href="index.html"><span>Main&#160;Page</span></a>
-</li><li><a href="pages.html"><span>Related&#160;Pages</span></a>
-</li></ul>
-</div><!-- contents -->
+<div class="textblock"><p><b>rcsc/geom/line_2d.h</b></p>
+<p>Classe que representa a fórmula linear aX + bY + c = 0. Muito últi para calcular trajetórias de jogadores ou da bola e para verificar se um ponto ou uma reta intercepta outra reta.</p>
+<p>A imagem abaixo mostra uma reta no plano bidimensional e um ponto perpendicular à ela:</p>
+<div class="image">
+<img src="https://github.com/RoboCup2D/tutorial/raw/master/images/line2d.png" alt="line2d.png"/>
+</div>
+<p>Métodos úteis dessa classe: </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> dist( <span class="keyword">const</span> Vector2D &amp; p ) <span class="keyword">const</span>         <span class="comment">// calcula distância euclidiana de um ponto para esta reta</span></div><div class="line"><span class="keywordtype">bool</span> isParallel( <span class="keyword">const</span> Line2D &amp; line ) <span class="keyword">const</span>    <span class="comment">// verifica se uma reta é paralela a esta reta</span></div><div class="line">Vector2D intersection( <span class="keyword">const</span> Line2D &amp; line ) <span class="keyword">const</span>     <span class="comment">// retorna o ponto de intersecção desta reta com outra</span></div><div class="line">Line2D perpendicular( <span class="keyword">const</span> Vector2D &amp; p ) <span class="keyword">const</span>       <span class="comment">// retorna a reta perpendicular à outra a partir de um ponto específico</span></div><div class="line"><span class="keyword">static</span> Vector2D intersection( <span class="keyword">const</span> Line2D &amp; line1, <span class="keyword">const</span> Line2D &amp; line2 );   <span class="comment">// retorna o ponto de </span></div><div class="line">                                                                              <span class="comment">// intersecção de duas retas</span></div><div class="line"><span class="keyword">static</span> Line2D angle_bisector( <span class="keyword">const</span> Vector2D &amp; origin, <span class="keyword">const</span> AngleDeg &amp; left, <span class="keyword">const</span> AngleDeg &amp; right )</div><div class="line">                                                                        <span class="comment">// retorna a bissetriz de um ângulo</span></div></div><!-- fragment --><p><b>Referências</b>: Ângulo bisector - <a href="http://mathworld.wolfram.com/AngleBisector.html">http://mathworld.wolfram.com/AngleBisector.html</a> Equação da reta - <a href="http://mathworld.wolfram.com/LinearEquation.html">http://mathworld.wolfram.com/LinearEquation.html</a> </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

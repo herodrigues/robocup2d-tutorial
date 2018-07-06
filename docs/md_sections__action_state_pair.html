@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RoboCup2D Tutorial: Main Page</title>
+<title>RoboCup2D Tutorial: ActionStatePair</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -77,7 +77,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('index.html','');});
+$(document).ready(function(){initNavTree('md_sections__action_state_pair.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -97,13 +97,12 @@ $(document).ready(function(){initNavTree('index.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">RoboCup2D Tutorial Documentation</div>  </div>
+<div class="title">ActionStatePair </div>  </div>
 </div><!--header-->
 <div class="contents">
-<ul><li><a href="index.html"><span>Main&#160;Page</span></a>
-</li><li><a href="pages.html"><span>Related&#160;Pages</span></a>
-</li></ul>
-</div><!-- contents -->
+<div class="textblock"><p>Armazena dois tipos de dados: CooperativeAction e PredictState.</p>
+<p>Possui métodos get básicos e auto-explicáveis pelo nome como:</p>
+<div class="fragment"><div class="line"><span class="keyword">const</span> CooperativeAction &amp; action() const   <span class="comment">// Retorna a ação</span></div><div class="line">const PredictState &amp; state() const         <span class="comment">// Retorna o estado previsto</span></div><div class="line">const boost::shared_ptr&lt; const CooperativeAction &gt; &amp; actionPtr() const    <span class="comment">// retorna o ponteiro da ação</span></div><div class="line">const boost::shared_ptr&lt; const PredictState &gt; &amp; statePtr() const          <span class="comment">// retorna o ponteiro do estado</span></div></div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

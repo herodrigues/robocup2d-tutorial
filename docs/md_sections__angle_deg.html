@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RoboCup2D Tutorial: Main Page</title>
+<title>RoboCup2D Tutorial: AngleDeg</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -77,7 +77,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('index.html','');});
+$(document).ready(function(){initNavTree('md_sections__angle_deg.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -97,13 +97,16 @@ $(document).ready(function(){initNavTree('index.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">RoboCup2D Tutorial Documentation</div>  </div>
+<div class="title">AngleDeg </div>  </div>
 </div><!--header-->
 <div class="contents">
-<ul><li><a href="index.html"><span>Main&#160;Page</span></a>
-</li><li><a href="pages.html"><span>Related&#160;Pages</span></a>
-</li></ul>
-</div><!-- contents -->
+<div class="textblock"><p><b>rcsc/geom/angle_deg.h</b></p>
+<p>Classe que representa ângulos em graus. Como bem se sabe, as funções matemáticas presentes no ANSI C são apenas para radianos, portanto, o uso dessa classe é de extrema importância em diversos cálculos durante uma partida.</p>
+<p><br />
+ </p>
+<p>&lt;img src="https://raw.githubusercontent.com/robocup2d/robocup2d/master/images/polar_coordinate_system.png" widht="150" height="150" style:"align: center" /&gt; </p>
+<p>Na imagem acima, se considerarmos o ponto <em>P</em> como sendo <em>P(4, 3)</em> logo teremos o valor do ângulo φ igual a: </p><div class="fragment"><div class="line">r² = 4² + 3²</div><div class="line">r = sqrt(25)</div><div class="line">r = 5</div><div class="line"></div><div class="line">sin φ = 25 / r</div><div class="line">sin φ = 25 / 5</div><div class="line">φ ≃ 2.78 rad ou φ ≃ -55.59º</div></div><!-- fragment --><p>Métodos úteis dessa classe: </p><div class="fragment"><div class="line"><span class="keyword">const</span> AngleDeg &amp; normalize()   <span class="comment">// normaliza o ângulo no intervalo [-180º, 180º]</span></div><div class="line">double abs() const             <span class="comment">// retorna o valor absoluto do ângulo</span></div><div class="line"><span class="keywordtype">double</span> radian() const          <span class="comment">// retorna o valor do ângulo em radianos</span></div></div><!-- fragment --><p> Essa classe possui muitos outros métodos úteis como cosseno, seno, tangente, arco-tangente, entre outros em graus e radianos, além de sobrecarga de operadores aritméticos, </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

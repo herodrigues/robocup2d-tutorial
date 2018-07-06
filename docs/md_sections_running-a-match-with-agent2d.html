@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RoboCup2D Tutorial: Main Page</title>
+<title>RoboCup2D Tutorial: Running a match</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -77,7 +77,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('index.html','');});
+$(document).ready(function(){initNavTree('md_sections_running-a-match-with-agent2d.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -97,13 +97,33 @@ $(document).ready(function(){initNavTree('index.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">RoboCup2D Tutorial Documentation</div>  </div>
+<div class="title">Running a match </div>  </div>
 </div><!--header-->
 <div class="contents">
-<ul><li><a href="index.html"><span>Main&#160;Page</span></a>
-</li><li><a href="pages.html"><span>Related&#160;Pages</span></a>
-</li></ul>
-</div><!-- contents -->
+<div class="textblock"><p>To do this tutorial, you must have read the <a href="https://github.com/robocup2d/robocup2d/wiki/Instalando-the-soccer-simulator">previous tutorial</a>.</p>
+<h3>Running the server and monitor</h3>
+<p>Open a terminal and run the server:</p>
+<blockquote class="doxtable">
+<p>rcssserver &amp; </p>
+</blockquote>
+<p>Now we need a monitor to visualize the match. If you have installed rcssmonitor and soccerwindow2, choose one and run it:</p>
+<blockquote class="doxtable">
+<p>rcssmonitor &amp; </p>
+</blockquote>
+<p>or</p>
+<blockquote class="doxtable">
+<p>soccerwindow2 &amp; </p>
+</blockquote>
+<h3>Take teams on the field</h3>
+<p>Go to the agent2d directory and run:</p>
+<blockquote class="doxtable">
+<p>cd src/ ./start.sh -t team_name </p>
+</blockquote>
+<p><em>Note: replace <b>team_name</b> with the desired team name. If you have permission problems with the second command, run</em> <code>sudo chmod +x start.sh</code>. <em>If you still have problems, edit the folder permissions by executing</em> <code>sudo chmod 777 *</code>.</p>
+<p>Open another terminal and run the same command cited above just placing a different team name.</p>
+<h3>Conclusion</h3>
+<p>Now you have two teams on the field. Just use Ctrl+K to perform a match kick-off. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

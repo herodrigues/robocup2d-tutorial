@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RoboCup2D Tutorial: Main Page</title>
+<title>RoboCup2D Tutorial: Body_GoToPoint</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -77,7 +77,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('index.html','');});
+$(document).ready(function(){initNavTree('md_sections__body__go_to_point.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -97,13 +97,11 @@ $(document).ready(function(){initNavTree('index.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">RoboCup2D Tutorial Documentation</div>  </div>
+<div class="title">Body_GoToPoint </div>  </div>
 </div><!--header-->
 <div class="contents">
-<ul><li><a href="index.html"><span>Main&#160;Page</span></a>
-</li><li><a href="pages.html"><span>Related&#160;Pages</span></a>
-</li></ul>
-</div><!-- contents -->
+<div class="textblock"><p><b>rcsc/action/body_go_to_point.h</b></p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;strategy.h&quot;</span></div><div class="line"><span class="preprocessor">#include &lt;rcsc/action/body_go_to_point.h&gt;</span></div><div class="line"><span class="comment">// [...]</span></div><div class="line"><span class="keywordtype">bool</span></div><div class="line">RoleCenterBack::execute( PlayerAgent * agent )</div><div class="line">{</div><div class="line">    <span class="keywordtype">bool</span> kickable = agent-&gt;world().self().isKickable();</div><div class="line">    <span class="keywordflow">if</span> ( agent-&gt;world().existKickableTeammate()</div><div class="line">         &amp;&amp; agent-&gt;world().teammatesFromBall().front()-&gt;distFromBall()</div><div class="line">         &lt; agent-&gt;world().ball().distFromSelf() )</div><div class="line">    {</div><div class="line">        kickable = <span class="keyword">false</span>;</div><div class="line">    }</div><div class="line"></div><div class="line"><span class="preprocessor">#if 0</span></div><div class="line">    <span class="keywordflow">if</span> ( kickable )</div><div class="line">    {</div><div class="line">        doKick( agent );</div><div class="line">    }</div><div class="line">    <span class="keywordflow">else</span></div><div class="line">    {</div><div class="line">        doMove( agent );</div><div class="line">    }</div><div class="line"><span class="preprocessor">#endif</span></div><div class="line"></div><div class="line">    doMove( agent );</div><div class="line">    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line">}</div><div class="line"><span class="comment">// [...]</span></div><div class="line"><span class="keywordtype">void</span></div><div class="line">RoleCenterBack::doMove( PlayerAgent * agent )</div><div class="line">{</div><div class="line">    <span class="keyword">const</span> WorldModel &amp; wm = agent-&gt;world();</div><div class="line">    <span class="keyword">const</span> Vector2D target = Vector2D(0, 0);</div><div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> dash_power = Strategy::get_normal_dash_power( wm );</div><div class="line"></div><div class="line">    <span class="keywordtype">double</span> dist_thr = wm.ball().distFromSelf() * 0.1;</div><div class="line"></div><div class="line">    <span class="keywordflow">if</span>( dist_thr &lt; 1.0 ) dist_thr = 1.0;</div><div class="line"></div><div class="line">    agent-&gt;debugClient().addCircle( target, dist_thr );</div><div class="line">    agent-&gt;debugClient().setTarget( target );</div><div class="line"></div><div class="line">    Body_GoToPoint( target, dash_power, dist_thr ).execute( agent );</div><div class="line">}</div></div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

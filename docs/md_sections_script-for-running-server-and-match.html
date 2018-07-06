@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RoboCup2D Tutorial: Main Page</title>
+<title>RoboCup2D Tutorial: Script to run a single match</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -77,7 +77,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('index.html','');});
+$(document).ready(function(){initNavTree('md_sections_script-for-running-server-and-match.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -97,13 +97,18 @@ $(document).ready(function(){initNavTree('index.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">RoboCup2D Tutorial Documentation</div>  </div>
+<div class="title">Script to run a single match </div>  </div>
 </div><!--header-->
 <div class="contents">
-<ul><li><a href="index.html"><span>Main&#160;Page</span></a>
-</li><li><a href="pages.html"><span>Related&#160;Pages</span></a>
-</li></ul>
-</div><!-- contents -->
+<div class="textblock"><p>Create a .sh file in the folder of your preference and insert the following lines:</p>
+<div class="fragment"><div class="line">#!/bin/bash</div><div class="line"></div><div class="line">rcssserver server::auto_mode=on &amp;  # automatically start the game</div><div class="line"></div><div class="line">cd ${DIR_OUR}</div><div class="line">make        </div><div class="line">./start.sh # ou ./start.sh -n x  where x is the number of players you want to load</div><div class="line"></div><div class="line">cd ${DIR_OPP}</div><div class="line">./start.sh # ou ./start.sh -n x  onde x é o número de jogadores que você deseja carregar</div><div class="line"></div><div class="line">soccerwindow2 --hide-view-area --hide-stamina # or rcssmonitor</div><div class="line"></div><div class="line">set -e</div><div class="line">function stop_server {   </div><div class="line">    pkill rcssserver</div><div class="line">}</div><div class="line"></div><div class="line">trap stop_server EXIT</div></div><!-- fragment --><p>Save this file and execute this command: </p><blockquote class="doxtable">
+<p>chmod a+x your_script.sh </p>
+</blockquote>
+<p>Now, you just need to run: </p><blockquote class="doxtable">
+<p>./script.sh /path/to/the/src/folder/of/your/team /path/to/the/src/folder/of/the/opponent/team </p>
+</blockquote>
+<p>By doing that, when you stop your script with Ctrl+C in a terminal, the rcssserver will be automatically killed </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

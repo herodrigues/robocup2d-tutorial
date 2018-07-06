@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RoboCup2D Tutorial: Main Page</title>
+<title>RoboCup2D Tutorial: PredictState</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -77,7 +77,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('index.html','');});
+$(document).ready(function(){initNavTree('md_sections__predict_state.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -97,13 +97,18 @@ $(document).ready(function(){initNavTree('index.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">RoboCup2D Tutorial Documentation</div>  </div>
+<div class="title">PredictState </div>  </div>
 </div><!--header-->
 <div class="contents">
-<ul><li><a href="index.html"><span>Main&#160;Page</span></a>
-</li><li><a href="pages.html"><span>Related&#160;Pages</span></a>
-</li></ul>
-</div><!-- contents -->
+<div class="textblock"><p>O objetivo dessa classe é prever algumas variáveis do jogo em um estado específico de acordo com o modelo de mundo de um jogador.</p>
+<p>Por exemplo:</p><ul>
+<li>tudo relativo à bola (rcsc::ballObject)</li>
+<li>tempo do jogo (rcsc::GameTime)</li>
+<li>modo do jogo (rcsc::GameMode)</li>
+<li>lado do campo (rcsc::SideID)</li>
+</ul>
+<p>Alguns métodos importantes:</p>
+<div class="fragment"><div class="line"><span class="keyword">const</span> rcsc::AbstractPlayerObject * ballHolder() const  <span class="comment">// verifica quem está com a bola, adversário ou</span></div><div class="line">                                                       <span class="comment">// companheiro, e retorna a referência do jogador</span></div><div class="line">const rcsc::AbstractPlayerObject &amp; self() const        <span class="comment">// verifica se o jogador a ser interagido não é o</span></div><div class="line">                                                       <span class="comment">// mesmo que está com a bola</span></div></div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RoboCup2D Tutorial: Main Page</title>
+<title>RoboCup2D Tutorial: Formation Editor</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -77,7 +77,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('index.html','');});
+$(document).ready(function(){initNavTree('md_sections_formations-with-fedit.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -97,13 +97,41 @@ $(document).ready(function(){initNavTree('index.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">RoboCup2D Tutorial Documentation</div>  </div>
+<div class="title">Formation Editor </div>  </div>
 </div><!--header-->
 <div class="contents">
-<ul><li><a href="index.html"><span>Main&#160;Page</span></a>
-</li><li><a href="pages.html"><span>Related&#160;Pages</span></a>
-</li></ul>
-</div><!-- contents -->
+<div class="textblock"><p><b>Installing fedit</b></p>
+<p>Download fedit in the Robocup's official repository [here]<a href="http://en.sourceforge.jp/projects/rctools/downloads/48791/fedit2-0.0.0.tar.gz/">http://en.sourceforge.jp/projects/rctools/downloads/48791/fedit2-0.0.0.tar.gz/</a>).</p>
+<p>Open a terminal (CTRL+ALT+T), extract the files and execute:</p>
+<blockquote class="doxtable">
+<p>tar -xvpf fedit2-0.0.0.tar.gz cd fedit2-0.0.0 </p>
+</blockquote>
+<p>Then:</p>
+<blockquote class="doxtable">
+<p>./configure make sudo make install </p>
+</blockquote>
+<p>Finally:</p>
+<blockquote class="doxtable">
+<p>fedit2 </p>
+</blockquote>
+<p><b>Troubleshoot</b>:</p>
+<blockquote class="doxtable">
+<p>unrecognized command line option ‘-pthread-lQtGui’ </p>
+</blockquote>
+<p>Open the <b>configure</b> file, locate the line below and put a space between $PKG_CONFIG the variables, so it will be like this:</p>
+<blockquote class="doxtable">
+<p>QT4_LDADD="$($PKG_CONFIG --static --libs-only-other $QT4_REQUIRED_MODULES) $($PKG_CONFIG --static --libs-only-l $QT4_REQUIRED_MODULES)" </p>
+</blockquote>
+<p>Source: <a href="http://askubuntu.com/a/892432/664657">http://askubuntu.com/a/892432/664657</a></p>
+<blockquote class="doxtable">
+<p>error while loading shared libraries: librcsc_agent.so.7 </p>
+</blockquote>
+<p>Run</p>
+<blockquote class="doxtable">
+<p>sudo ldconfig -v </p>
+</blockquote>
+<p>Source: <a href="http://stackoverflow.com/questions/33506751/start-sh-dosent-work-in-agent2d-robocup">http://stackoverflow.com/questions/33506751/start-sh-dosent-work-in-agent2d-robocup</a> </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

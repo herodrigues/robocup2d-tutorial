@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RoboCup2D Tutorial: Main Page</title>
+<title>RoboCup2D Tutorial: CooperativeAction</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -77,7 +77,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('index.html','');});
+$(document).ready(function(){initNavTree('md_sections__cooperative_action.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -97,13 +97,16 @@ $(document).ready(function(){initNavTree('index.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">RoboCup2D Tutorial Documentation</div>  </div>
+<div class="title">CooperativeAction </div>  </div>
 </div><!--header-->
 <div class="contents">
-<ul><li><a href="index.html"><span>Main&#160;Page</span></a>
-</li><li><a href="pages.html"><span>Related&#160;Pages</span></a>
-</li></ul>
-</div><!-- contents -->
+<div class="textblock"><p>Classe que representa ações para serem tomadas em grupo por um agente.</p>
+<p>As categorias de ações são:</p>
+<p>Hold - segurar a bola Dribble - driblar o adversário Pass - passar a bola para o companheiro de equipe Shoot - chutar a bola em direção ao gol Move - mover-se NoAction - nenhuma ação</p>
+<p>Basicamente, a classe possui métodos get e set para armazenar informações como número do jogador, categoria da ação, ponto final da ação, etc.</p>
+<p>A classe também possui uma struct simples e um método para comparar distâncias entre dois pontos.</p>
+<div class="fragment"><div class="line">DistCompare( <span class="keyword">const</span> rcsc::Vector2D &amp; pos )</div><div class="line">            : pos_( pos )</div><div class="line">          { }</div><div class="line"></div><div class="line">        <span class="keywordtype">bool</span> operator()( <span class="keyword">const</span> Ptr &amp; lhs,</div><div class="line">                         <span class="keyword">const</span> Ptr &amp; rhs )<span class="keyword"> const</span></div><div class="line"><span class="keyword">          </span>{</div><div class="line">              <span class="keywordflow">return</span> lhs-&gt;targetPoint().dist2( pos_ ) &lt; rhs-&gt;targetPoint().dist2( pos_ );</div><div class="line">          }</div></div><!-- fragment --><p>Operador () sobrecarregado para passar dois parâmetros shared_ptr do tipo da própria classe CooperativeAction. Esse função é usada para comparar duas instâncias da classe CooperativeAction e determinar qual é o maior ou menor valor das distâncias euclidianas entre o vector2D targetPoint (ponto final da ação) e o ponto passado como parâmetro no método-construtor DistCompare da struct de mesmo nome. (<b>Veja:</b> dist2 em https://github.com/RoboCup2D/tutorial/blob/master/sections/Vector2D.md "Vector2D") </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

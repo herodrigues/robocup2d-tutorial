@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RoboCup2D Tutorial: Main Page</title>
+<title>RoboCup2D Tutorial: MathUtil</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -77,7 +77,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('index.html','');});
+$(document).ready(function(){initNavTree('md_sections__math_util.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -97,13 +97,12 @@ $(document).ready(function(){initNavTree('index.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">RoboCup2D Tutorial Documentation</div>  </div>
+<div class="title">MathUtil </div>  </div>
 </div><!--header-->
 <div class="contents">
-<ul><li><a href="index.html"><span>Main&#160;Page</span></a>
-</li><li><a href="pages.html"><span>Related&#160;Pages</span></a>
-</li></ul>
-</div><!-- contents -->
+<div class="textblock"><p>Classe com funções matemáticas.</p>
+<p>Abaixo estão listados alguns dos métodos dessa classe:</p>
+<div class="fragment"><div class="line"><span class="comment">// limita um valor dentro de um intervalo</span></div><div class="line"><span class="keyword">template</span> &lt; <span class="keyword">typename</span>  T &gt; <span class="keyword">const</span> T &amp; bound( <span class="keyword">const</span> T &amp; low, <span class="keyword">const</span> T &amp; x, <span class="keyword">const</span> T &amp; high )</div><div class="line"></div><div class="line"><span class="comment">// calcula o quadrado de um número</span></div><div class="line"><span class="keyword">template</span> &lt; <span class="keyword">typename</span> T &gt; T square( <span class="keyword">const</span> T &amp; x )</div><div class="line"></div><div class="line"><span class="comment">// retorna se o sinal de um número </span></div><div class="line"><span class="keyword">inline</span> <span class="keywordtype">double</span> sign( <span class="keyword">const</span> <span class="keywordtype">double</span> &amp; x )</div><div class="line"></div><div class="line"><span class="comment">// arredonda um valor de ponto flutuante com uma precisão específica</span></div><div class="line"><span class="keyword">inline</span> <span class="keywordtype">double</span> round( <span class="keyword">const</span> <span class="keywordtype">double</span> &amp; value, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp; prec )</div><div class="line"></div><div class="line"><span class="comment">// fórmula de Bhaskara, retorna o número de soluções</span></div><div class="line"><span class="keyword">inline</span> <span class="keywordtype">int</span> quadratic_formula( <span class="keyword">const</span> <span class="keywordtype">double</span> &amp; a, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp; b, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp; c, <span class="keywordtype">double</span> * sol1, <span class="keywordtype">double</span> * sol2 )</div><div class="line"></div><div class="line"><span class="comment">// calcula a soma de uma série geométrica</span></div><div class="line"><span class="keyword">inline</span> <span class="keywordtype">double</span> calc_sum_geom_series( <span class="keyword">const</span> <span class="keywordtype">double</span> &amp; first_term, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp; r, <span class="keyword">const</span> <span class="keywordtype">int</span> len )</div><div class="line"></div><div class="line"><span class="comment">// calcula a soma de séries geométricas infinitas</span></div><div class="line"><span class="keyword">inline</span> <span class="keywordtype">double</span> calc_sum_inf_geom_series( <span class="keyword">const</span> <span class="keywordtype">double</span> &amp; first_term, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp; r )</div></div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
