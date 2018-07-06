@@ -24,6 +24,7 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "RoboCup2D Tutorial", "index.html", [
+    [ "Overview", "index.html", null ],
     [ "ActionGenerator", "md_sections__action_generator.html", null ],
     [ "ActionStatePair", "md_sections__action_state_pair.html", null ],
     [ "AngleDeg", "md_sections__angle_deg.html", null ],
