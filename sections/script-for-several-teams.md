@@ -1,3 +1,5 @@
+# Script to run several matches
+
 Binários no site oficial da RoboCup: www.socsim.robocup.org/files/2D/binary
 
 Não esqueça de editar os nomes das pastas!

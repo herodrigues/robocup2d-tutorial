@@ -1,9 +1,6 @@
-Instale o menconder:
+# Record Matches
 
-```bash
-$ sudo apt-get install mencoder
-```
+Install menconder:
 
-```bash
-mencoder "mf://*.png" -mf fps=10 -o test.avi -ovc lavc -lavcopts vcodec=msmpeg4v2:vbitrate=8000
-```
+> sudo apt-get install mencoder
+> mencoder "mf://*.png" -mf fps=10 -o test.avi -ovc lavc -lavcopts vcodec=msmpeg4v2:vbitrate=8000

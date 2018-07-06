@@ -1,6 +1,6 @@
- 
+# Configuring the trainer
 
-### SampleTrainer class
+### SampleTrainer
 
 Like the coach (sample_coach) and the player (sample_player) there is a sample_trainer class. Basically, this class loads the 11 players and the coach team. However, you may allow the players to do nothing or simply execute specific tasks which go in the actionImpl method.
 

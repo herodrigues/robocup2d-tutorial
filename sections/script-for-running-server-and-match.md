@@ -1,4 +1,7 @@
+# Script to run a single match
+
 Create a .sh file in the folder of your preference and insert the following lines:
+
 ```bash
 #!/bin/bash
 
@@ -22,13 +25,9 @@ trap stop_server EXIT
 ```
 
 Save this file and execute this command:
-```bash
-$ chmod a+x your_script.sh
-```
+> chmod a+x your_script.sh
 
 Now, you just need to run:
-```bash
-$ ./script.sh /path/to/the/src/folder/of/your/team /path/to/the/src/folder/of/the/opponent/team
-```
+> ./script.sh /path/to/the/src/folder/of/your/team /path/to/the/src/folder/of/the/opponent/team
 
 By doing that, when you stop your script with Ctrl+C in a terminal, the rcssserver will be automatically killed

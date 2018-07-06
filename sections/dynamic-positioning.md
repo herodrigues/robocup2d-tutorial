@@ -1,3 +1,5 @@
+# Dynamic Positioning
+
 Nessa seção é descrito o sistema de formação SBSP (*Situation Based Strategic Positioning* ou em português algo como Posicionamento Estratégico Baseado na Situação). Nesse SBSP, cada player agent não é considerado no movimento dos outros jogadores e para a posição-alvo do movimento é considerada como entrada somente a posição da bola. Isto é feito para apenas parecer que não é um posicionamento cooperativo, e sim como em uma coordenação aparentemente individual.
 O comportamento de posicionamento descrito nesta seção é algo próximo às habilidades individuais de cada player agent. No entanto, uma vez que são necessários ajustes em consideração ao equilíbrio de toda a equipe na implementação da operação, o que se segue aqui é uma parte da seção Desenvolvimento da Equipe.
 
