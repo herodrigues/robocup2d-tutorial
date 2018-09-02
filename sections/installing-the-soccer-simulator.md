@@ -12,7 +12,7 @@ Open a terminal and run:
 
 Open a terminal and run the following commands:
 
-> sudo apt-add-repository ppa:gnurubuntu/rubuntu
+> sudo apt-add-repository ppa:gnurubuntu/rubuntu <br>
 > sudo apt-get update
 
 This will automatically add an entry to  your source list based on your Ubuntu version.
@@ -50,11 +50,11 @@ Download these files:
 - librcsc
 - agent2d
 
-Currently, the last versions of agent2d and librcsc are: [agent2d-3.1.1](http://en.sourceforge.jp/projects/rctools/downloads/55186/agent2d-3.1.1.tar.gz/) and [librcsc-4.1.1](http://en.sourceforge.jp/projects/rctools/downloads/51941/librcsc-4.1.0.tar.gz/). Go to the directory where you have saved the downloaded files and follow these steps (do it in this exact order!):  _Note that x.x.x is the downloaded file version._
+Currently, the last versions of agent2d and librcsc are: [agent2d-3.1.1](http://en.sourceforge.jp/projects/rctools/downloads/55186/agent2d-3.1.1.tar.gz/) and [librcsc-4.1.0](http://en.sourceforge.jp/projects/rctools/downloads/51941/librcsc-4.1.0.tar.gz/). Go to the directory where you have saved the downloaded files and follow these steps (do it in this exact order!):  _Note that x.x.x is the downloaded file version._
 
 Open a terminal and extract the files:
 
-> tar -zxpf librcsc-x.x.x.tar.gz
+> tar -zxpf librcsc-x.x.x.tar.gz <br>
 > tar -zxpf agent2d-x.x.x.tar.gz
 
 **NOTE**: all the directories names where the librcsc files are saved must not contain spaces.
@@ -70,8 +70,8 @@ Run the commands:
 
 **Note:** _If you have permission problems in the first step, instead of_ `./configure` _execute_ `sh ./configure`.
 
-> ./configure
-> make
+> ./configure <br>
+> make <br>
 > sudo make install
 
 ### Installing agent2d
@@ -80,8 +80,8 @@ Run the commands:
 
 Run: 
 
-> ./configure
-> make
+> ./configure <br>
+> make <br>
 > sudo make install
 
 ### (Optional) Installing the soccerwindow2 monitor
@@ -92,10 +92,10 @@ In the RoboCup repository cited above in this tutorial, download this [file](htt
 
 Open a terminal and run:
 
-> tar -zxpf soccerwindow2-x.x.x.tar.gz
-> cd soccerwindow2-x.x.x.tar.gz
-> ./configure
-> make
+> tar -zxpf soccerwindow2-x.x.x.tar.gz <br>
+> cd soccerwindow2-x.x.x.tar.gz <br>
+> ./configure <br>
+> make <br>
 > sudo make install
 
 **Troubleshoot**:
@@ -112,5 +112,5 @@ Source: http://askubuntu.com/a/892432/664657
 
 ### Conclusion
 
-With all done, it is time to run a match and test if everything has done with no errrors. 
+With all done, it is time to run a match and test if everything has done with no errors. 
 See the next tutorial [here](sections/running-a-match-with-agent2d.md).
