@@ -112,5 +112,5 @@ Source: http://askubuntu.com/a/892432/664657
 
 ### Conclusion
 
-With all done, it is time to run a match and test if everything has done with no errors. 
-See the next tutorial [here](sections/running-a-match-with-agent2d.md).
+With all done, it is time to run a match and test if everything has done with no errrors. 
+See the next tutorial [here](https://github.com/herodrigues/robocup2d-tutorial/blob/master/sections/running-a-match-with-agent2d.md).
