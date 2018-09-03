@@ -12,7 +12,7 @@ Open a terminal and run:
 
 Open a terminal and run the following commands:
 
-> sudo apt-add-repository ppa:gnurubuntu/rubuntu <br>
+> sudo apt-add-repository ppa:gnurubuntu/rubuntu  
 > sudo apt-get update
 
 This will automatically add an entry to  your source list based on your Ubuntu version.
@@ -32,8 +32,8 @@ Extract rcssserver file:
 > tar -zxpf rcssserver-x.x.x.tar.gz
 
 Configure and compile rcssserver:
-> cd rcssserver-x.x.x
-> ./configure && make
+> cd rcssserver-x.x.x  
+> ./configure && make  
 > sudo make install
 
 To install the rcssmonitor, go to the end of this article and follow the same steps to install the soccerwindow2 monitor.
@@ -54,7 +54,7 @@ Currently, the last versions of agent2d and librcsc are: [agent2d-3.1.1](http://
 
 Open a terminal and extract the files:
 
-> tar -zxpf librcsc-x.x.x.tar.gz <br>
+> tar -zxpf librcsc-x.x.x.tar.gz  
 > tar -zxpf agent2d-x.x.x.tar.gz
 
 **NOTE**: all the directories names where the librcsc files are saved must not contain spaces.
@@ -70,8 +70,8 @@ Run the commands:
 
 **Note:** _If you have permission problems in the first step, instead of_ `./configure` _execute_ `sh ./configure`.
 
-> ./configure <br>
-> make <br>
+> ./configure  
+> make  
 > sudo make install
 
 ### Installing agent2d
@@ -80,8 +80,8 @@ Run the commands:
 
 Run: 
 
-> ./configure <br>
-> make <br>
+> ./configure  
+> make  
 > sudo make install
 
 ### (Optional) Installing the soccerwindow2 monitor
@@ -92,10 +92,10 @@ In the RoboCup repository cited above in this tutorial, download this [file](htt
 
 Open a terminal and run:
 
-> tar -zxpf soccerwindow2-x.x.x.tar.gz <br>
-> cd soccerwindow2-x.x.x.tar.gz <br>
-> ./configure <br>
-> make <br>
+> tar -zxpf soccerwindow2-x.x.x.tar.gz  
+> cd soccerwindow2-x.x.x.tar.gz   
+> ./configure  
+> make  
 > sudo make install
 
 **Troubleshoot**:
