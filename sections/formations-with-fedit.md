@@ -2,17 +2,17 @@
 
 **Installing fedit**
 
-Download fedit in the Robocup's official repository [here]http://en.sourceforge.jp/projects/rctools/downloads/48791/fedit2-0.0.0.tar.gz/).
+Download fedit in the Robocup's official repository [here](http://en.sourceforge.jp/projects/rctools/downloads/48791/fedit2-0.0.0.tar.gz/).
 
 Open a terminal (CTRL+ALT+T), extract the files and execute:
 
-> tar -xvpf fedit2-0.0.0.tar.gz
+> tar -xvpf fedit2-0.0.0.tar.gz  
 > cd fedit2-0.0.0
 
 Then:
 
-> ./configure
-> make
+> ./configure  
+> make  
 > sudo make install
 
 Finally: 
