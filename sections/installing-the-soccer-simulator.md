@@ -25,7 +25,7 @@ Install the server and monitor:
 Install bison and flex:
 > sudo apt-get install bison flex
 
-Go to the Robocup Soccer Simulation official repository on SourgeForge by clicking [here](http://sourceforge.net/projects/sserver/files/) and download the files rcssserver-x.x.x.tar.gz and rcssmonitor-x.x.x.tar.gz.
+Go to the Robocup Soccer Simulation official repository [here](https://github.com/rcsoccersim/rcssserver/releases) and download the files rcssserver-x.x.x.tar.gz. Download also the rcssmonitor-x.x.x.tar.gz [here](https://github.com/rcsoccersim/rcssmonitor/releases).
 _Note that x.x.x is the downloaded file version._
 
 Extract rcssserver file:
