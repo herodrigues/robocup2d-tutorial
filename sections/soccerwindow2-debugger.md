@@ -1,43 +1,38 @@
 # SoccerWindow2
 
-**Tutorial anterior: [Rodando uma partida com o agent2D](https://github.com/RoboCup2D/tutorial/blob/master/sections/running-a-match-with-agent2d.md)**
+SoccerWindow2 is a powerful monitor that can be used as a debugger even with a running match.
 
-O SoccerWindow2 é um poderoso monitor que pode ser usado como debugger inclusive com a partida rodando.
-
-Abra um terminal e inicie o SoccerWindow2:
+Open a terminal and run:
 ```bash
 $ soccerwindow2 &
 ```
 
-_Se não deseja executar o soccerwindow pelo terminal, você pode adicioná-lo no menu de aplicações da sua distribuição Linux. Leia sobre isso [aqui](https://developer.gnome.org/integration-guide/stable/desktop-files.html.en)_
+In the main menu, click on  _Monitor > Launcher_ Dialog or press Ctrl+X:
 
+Set the path to the `start.sh` script (located in the src folder) for both teams with the arguments _--debug --debug-server-connect_.
 
-No menu, abra _Monitor > Launcher_ Dialog ou simplesmente Ctrl+X:
+The teams will appear in the field and the server will be started. The debug information shows up immediately on the screen. If needed, you can choose on which player you want to focus. 
 
-Coloque o caminho para o script start.sh (fica na pasta src) dos dois times seguido dos argumentos _--debug --debug-server-connect_.
+Go to _Debug > View Preference_ or press Ctrl+V. In the _Object_ tab, navigate to the section _Player Selection_ and choose one of the following items:
+- **Auto left**: visualize information of all players of the left team (left side of the field)
+- **Left number X**: visualize information of a specific player t of the left team (left side of field).
+- **Left coach**: visualize information of the left team coach (left side of field).
+- **Auto right**: visualize information of all players of the right team (right side of the field)
+- **Right number X**: visualize information of a specific player t of the right team (right side of field).
+- **Right coach**: visualize information of the right team coach (right side of field).
 
-As equipes entrarão em campo e o servidor será iniciado. A informação de debug aparecerá imediatamente na tela. Se necessário,  você poderá escolher em qual membro ou membros das equipes você desejar manter o foco.
-
-No menu, vá em _Debug > View Preference_ ou simplesmente Ctrl+V. Na aba _Object_, vá na seção _Player Selection_ e escolha entre os seguintes items:
-- **Auto left**: visualiza informações de todos os jogadores do time que está do lado esquerdo do campo
-- **Left number X**: visualiza informações do jogador número X do time que está do lado esquerdo do campo 
-- **Left coach**: visualiza informações do técnico do time que está do lado esquerdo do campo 
-- **Auto right**: visualiza informações de todos os jogadores do time que está do lado direito do campo
-- **Right number X**: visualiza informações do jogador número X do time que está do lado direito do campo 
-- **Right coach**: visualiza informações do técnico do time que está do lado direito do campo 
-
-A imagem abaixo mostra uma partida em pausa no ciclo 2810 com o debug ativo para toda a equipe iBots2D:
+The image below showsa match paused at cycle 2810 with the debugger active for all players of the iBots2D team:
 
 ![](https://github.com/RoboCup2D/tutorial/raw/master/images/debug-view.png)
-> Imagem maior [aqui](https://github.com/RoboCup2D/tutorial/raw/master/images/debug-view.png)
+> Bigger image [here](https://github.com/RoboCup2D/tutorial/raw/master/images/debug-view.png)
 
-- Os círculos azuis representam as últimas posições conhecidas dos adversários pelo jogador número 7 (jogador que está com a bola).
-- Os círculos verdes representam as últimas posições conhecidas dos companheiros de equipe pelo jogador número 7 (jogador que está com a bola).
-- O círculo laranja com um x no centro, representa a posição onde o jogador 7 desejou passar a bola.
-- A linha vermelha pontilhada representa a possível trajetória da bola
-- A linha preta do jogador 6 para o 7, indica que o jogador 7 recebeu a mensagem enviada pelo jogador 6.
-- No canto superior esquerdo logo abaixo do nome da equipe Helios_base, são escritas informações de comunicação dos jogadores. Neste caso, o jogador sete tem 3 ações a serem tomadas: mover-se (BasicMove78), girar o pescoço para fazer um scan (NeckScan) e não atacar (AttOff).
+- The blue circles represent the last known positions of the opponents viewed by the player number 7 (player with the ball possession).
+- The green circles represent the last known positions of the teammates viewed by the player number 7 (player with the ball possession).
+- The orange circle with a X on its center represents the position where the player number 7 tried to pass the ball.
+- The tracing red line represents the probable ball path.
+- The black line from the player number 6 to the player number 7 indicates that the player 7 received a message sent by the player 6.
+- On the left top corner right below the Helios_base team name, information about players communications are written. In this example, the player 7 has three actions to be taken: move (BasicMove78), turn its neck to scan the field (NeckScan) and do not attack (AttOff).
 
-Todas essas informações podem ser selecionadas no menu em _Debug > Debug Message_.
+All this information can be selected using the main menu at _Debug > Debug Message_.
 
-Para ver o debug de um replay de uma partida, você terá que adicionar antes a flag _--log-dir DIRECTORY_ no script start.sh da equipe juntamente com  _--debug --debug-server-connect_ (onde DIRECTORY é o diretório onde você deseja salvar os logs). Com a partida finalizada, basta abrir o arquivo RCG da partida e os logs do debug view pelo menu File.
+TO view the debug information of a match replay, you need to add the flag _--log-dir DIRECTORY_ in the start.sh script of your team and also add the flags _--debug --debug-server-connect_ (where DIRECTORY is the folder where you want to save the match logs) é o diretório onde você deseja salvar os logs). When the match is over, you only need to open the match RCG file and the log files using the File menu.
