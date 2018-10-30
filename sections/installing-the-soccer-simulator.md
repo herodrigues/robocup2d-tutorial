@@ -50,7 +50,7 @@ Download these files:
 - librcsc
 - agent2d
 
-Currently, the last versions of agent2d and librcsc are: [agent2d-3.1.1](http://en.sourceforge.jp/projects/rctools/downloads/55186/agent2d-3.1.1.tar.gz/) and [librcsc-4.1.0](http://en.sourceforge.jp/projects/rctools/downloads/51941/librcsc-4.1.0.tar.gz/). Go to the directory where you have saved the downloaded files and follow these steps (do it in this exact order!):  _Note that x.x.x is the downloaded file version._
+Currently, the last versions of agent2d and librcsc are: [agent2d](https://osdn.net/projects/rctools/releases/55186) and [librcsc](https://osdn.net/projects/rctools/releases/p3777). Go to the directory where you have saved the downloaded files and follow these steps (do it in this exact order!):  _Note that x.x.x is the downloaded file version._
 
 Open a terminal and extract the files:
 
@@ -88,7 +88,7 @@ Run:
 
 There is another monitor which has more detailed information about matches and players information. This monitor is used in the official Robocup World Cup. If you wish to install it, just run these commands:
 
-In the RoboCup repository cited above in this tutorial, download this [file](http://en.sourceforge.jp/projects/rctools/downloads/51942/soccerwindow2-5.1.0.tar.gz/).
+In the RoboCup repository cited above in this tutorial, download this [file](https://osdn.net/projects/rctools/releases/p4886).
 
 Open a terminal and run:
 
