@@ -6,14 +6,7 @@ The following steps were tested and executed using Ubuntu Linux 12.04 and Debian
 
 Open a terminal and run:
 
-> sudo apt-get install g++ build-essential libboost-all-dev qt4-dev-tools libaudio-dev libgtk-3-dev libxt-dev
-
-**DEBIAN ONLY**
-
-Install bison and flex:
-> sudo apt-get install bison flex
-
-________________
+> sudo apt-get install g++ build-essential libboost-all-dev qt4-dev-tools libaudio-dev libgtk-3-dev libxt-dev bison flex
 
 Go to the Robocup Soccer Simulation official repository [here](https://github.com/rcsoccersim/rcssserver/releases) and download the files rcssserver-x.x.x.tar.gz. Download also the rcssmonitor-x.x.x.tar.gz [here](https://github.com/rcsoccersim/rcssmonitor/releases).
 _Note that x.x.x is the downloaded file version._
