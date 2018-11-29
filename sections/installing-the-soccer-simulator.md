@@ -21,8 +21,6 @@ Configure and compile rcssserver:
 
 To install the rcssmonitor, go to the end of this article and follow the same steps to install the soccerwindow2 monitor.
 
-**IMPORTANT: The steps above for Debian 7 were not tested in other linux distributions, but you can give a try.**
-
 ____________________________________________________________________________________
 
 Now you can continue with the installation, either if you're using Ubuntu or Debian:
