@@ -1,3 +1,5 @@
+# Vector2D
+
 **rcsc/geom/vector_2d.h**
 
 Essa classe possui métodos de extrema importância para o entendimento do simulador, pois ela armazena dois pontos no espaço bidimensional e isso é a chave da simulação 2D de futebol.
@@ -33,7 +35,7 @@ double length() const  // retorna o tamanho ( equivalente ao método r() )
 double length2() const // retorna o valor ao quadrado do tamanho ( equivalente ao método r2() )
 AngleDeg th() const    // retorna o ângulo
 AngleDeg dir() const   // retorna o ângulo ( equivalente ao método th() )
-Vector2D abs() const   // retorna os valores absolutos 
+Vector2D abs() const   // retorna os valores absolutos
 double absX() const    // retorna o valor absoluto de x
 double absY() const    // retorna o valor absoluto de y
 Vector2D & add( const Vector2D & v )                    // adiciona os valores x e y de v ao vetor

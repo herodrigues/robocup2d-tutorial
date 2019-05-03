@@ -1,15 +1,17 @@
+# SoccerMath
+
+This class has a method that can be modified to improve the kick algorithm.
+
 ```cpp
 /*!
-  \brief Calcula a taxa do chute
-  \param dist Distança do jogador para a bola
-  \param dir_diff Diferença entre o ângulo do jogador e da bola
-  \param kprate Taxa de força do chute do jogador
-  \param bsize Raio da bola
-  \param psize Raio do jogador
-  \param kmargin Margem da área chutável do jogador 
-  \return Taxa do efeito da força de chute
-
-  Pode ser útil redefenir esse algoritmo no módulo do chute
+  \brief Calculates the kick rate
+  \param dist Distance between the player and the ball
+  \param dir_diff Difference between the player angle and the ball
+  \param kprate Player kick rate power
+  \param bsize Ball ray
+  \param psize Player ray
+  \param kmargin Player's kickable area margin
+  \return Power kick rate 
 */
 inline double kick_rate( const double & dist,
            const double & dir_diff,

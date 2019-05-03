@@ -1,25 +1,27 @@
-Iniciando pela classe de onde herdam mais classes: ActionGenerator.
-Essa classe gera uma cadeia de ações para serem decididas pelo agente.
+# ActionStateGenerator
 
-Segue a figura que mostra a herança de classes.
+Starting from the class which extends more classes: ActionGenerator.
+This class generates a chain of actions to be taken by the agent.
 
-<figura>
+The class inheritance is shown in the picture below:
 
-Essa classe possui dois membros públicos: um "ponteiro compartilhado" e um "ponteiro constante compartilhado".
+<picture>
+
+This class has two public members: a shared pointer and a constant shared pointer.
 
 "The shared_ptr class template stores a pointer to a dynamically allocated object, typically with a C++ new-expression. The object pointed to is guaranteed to be deleted when the last shared_ptr pointing to it is destroyed or reset"
- **Mais em**: http://www.boost.org/doc/libs/1_53_0/libs/smart_ptr/shared_ptr.htm
+ **Read more**: http://www.boost.org/doc/libs/1_53_0/libs/smart_ptr/shared_ptr.htm
 
-A classe também possui mais um construtor e um construtor-cópia não utilizados de acordo com o comentário escrito acima deles.
+This class also has one more constructor a copy constructor not used as stated in the class doc strings.
 
-Segue alguns métodos dessa classe:
+Here are some of the class methods:
 ```cpp
 /*!
-  \brief Gera uma cadeia de pares "ação-estado" (ActionStatePair)
-  \param result Armazena o valor gerado pelo par "ação-estado"
-  \param state Último estado a gerar uma nova "ação-estado"
-  \param wm Visão de mundo atual no estado inicial
-  \param path Cadeia de "ação-estado" do estado inicial até o estado final
+  \brief Generates a chain of "action-state" pairs (ActionStatePair)
+  \param result Store the value generated for the "action-state" pair
+  \param state Last state to generate an "action-state"
+  \param wm World model of the initial state
+  \param path Chain of "action-state" of the initial state until the final state
 */
 virtual void generate( std::vector< ActionStatePair > * result,
                    const PredictState & state,
@@ -27,8 +29,8 @@ virtual void generate( std::vector< ActionStatePair > * result,
                    const std::vector< ActionStatePair > & path ) const = 0;
 
 /*!
-* \brief Adiciona os estados gerados ao vector M_generators 
-* \param g Instância da classe ActionGenerator
+* \brief Add generated states to the vector M_generators
+* \param g ActionGenerator instance
 */
 void addGenerator( const ActionGenerator * g )
       {
@@ -39,10 +41,6 @@ void addGenerator( const ActionGenerator * g )
       }
 ```
 
-Essa classe serve de herança para diversas classes que gerarão cadeias de ações básicas como chutar, passar e cruzar. Todas essas ações são levadas em conta de acordo com a ação a ser tomada em grupo (CooperativeAction) e com o estado a ser previsto (PredictState). Essas duas informações são armazenadas numa instância da classe ActionStatePair.
+This class is the base class for several other classes that generate chains of basic actions such as kick, pass and cross. All of these actions are taken into account according to the action that is executed for more than one agent (CooperativeAction) and the predicted state (PredictState). This information is stored in a ActionStatePair instance.
 
-Todas as classes do tipo "action_gen_" possuem um método generate (que é um método na classe pai, ActionGenerator). O método generate tem por objetivo gerar uma cadeia de ações a serem tomadas de acordo com cada estado previsto. O modelo de mundo do jogador é passado como parâmetro, assim como um ponteiro para vector que armazenará o resultado de ActionStatePair.
-
-Cada método generate de cada classe act_gen_, consequentemente, tem sua particularidade e está explicado no seu específico wiki.
-
-
+All "action_gen_" type classes have a generate method (a method of the base class, ActionGenerator). The generate method creates a chain of actions that will be executed according to the predicted state. The player's world model is used as parameter and also a pointer to the vector that will store the result of ActionStatePair.

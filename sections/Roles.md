@@ -1,36 +1,27 @@
-Conjunto de classes para definir qual a função do jogador e o que ele deve fazer de acordo com sua função e estratégia do jogo.
+# Roles
 
-Cada jogador tem uma _role_ e isso depender da posição jogador. No código do Agent2D 3.1.1, existem as seguintes _roles_ na formação básica 4-3-3 conforme a figura abaixo:
+Group of classes to determine the players roles and what they need to do according to their roles and the game strategy.
+
+Each player has a _role_ and this depends on each player position. In the Agend2D code, using the basic formation 4-3-3, the roles are:
 
 ![agent2d-basic-formation.png](https://github.com/RoboCup2D/tutorial/raw/master/images/agent2d-basic-formation.png)
 
-_1 Goalie - Goleiro_
+- 1 Goalie - Goalkeepr
+- 2 CenterBack (left)
+- 3 CenterBack (right)
+- 4 SideBack (left)
+- 5 SideBack (right)
+- 6 DefensiveHalf
+- 7 OffensiveHalf (left)
+- 8 OffensiveHalf (right)
+- 9 SideForward (left)
+- 10 SideForward (right)
+- 11 CenterForward
 
-_2 CenterBack - Zagueiro central_
+What do you need to implement is only the behavior of each _role_ in a specific situation.
 
-_3 CenterBack - Zagueiro central_
+In the Agent2D, each _role_ has only two methods: doKick() and doMove().
 
-_4 SideBack - Lateral esquerdo_
-
-_5 SideBack - Lateral direito_
-
-_6 DefensiveHalf - Volante_
-
-_7 OffensiveHalf - Meio-campo ofensivo (esquerdo)_
-
-_8 OffensiveHalf - Meio-campo ofensivo (direito)_
-
-_9 SideForward - Ponta esquerdo_
-
-_10 SideForward - Ponta direito_
-
-_11 CenterForward - Centroavante_
-
-
-
-O que você desenvolverá são apenas Behaviours (comportamentos) para cada _role_ em determinada situação. 
-
-**No código original** do Agent2D, cada _role_ tem apenas dois métodos: doKick() e doMove(). Vejamos:
 ```cpp
 bool
 RoleCenterBack::execute( PlayerAgent * agent )
@@ -51,29 +42,30 @@ RoleCenterBack::execute( PlayerAgent * agent )
     {
         doMove( agent );
     }
-    
+
     return true;
 }
 ```
-O método acima verifica se o jogador que está com a bola tem condições de chutá-la e se a distância dos companheiros de equipe para a bola é menor que sua própria distância. Se estas duas condições forem satisfeitas, isso indica que o jogador deve se mover com a bola, caso contrário, ele deve passar a bola para um companheiro de equipe.
 
-Vamos supor que se queria testar o passe em profundidade. Para isso, temos o Bhv_ThroughPassKick onde está implementado todo o cálculo do passe em profundidade.
-Ainda, queremos fazer o passe somente com os jogadores ofensivos de meio-campo (_role_: OffensiveHalf). Então, basta ir no método doKick() da classe [RoleOffensiveHalf](https://github.com/RoboCup2D/tutorial/blob/master/sections/RoleOffensiveHalf.md) e verificar em quais _BallArea's_ o jogador pode executar o passe em profundidade. 
+The method above checks if the player with the ball possession can kick it to the goal and if the teammate distance to the ball is smaller than the player distance. If these two conditions are met, this means that the player can move with the ball. Otherwise, the player needs to pass the ball to the teammate.
 
-Lembre-se, antes de implementar seu behaviour, você deve entender como funciona a classe [Strategy](https://github.com/RoboCup2D/tutorial/blob/master/sections/Strategy.md).
+Suppose that you want to perform a through pass. To do that, there is the Bhv_ThroughPassKick class which has the through pass implementation. We also want to perform this pass only with midfielder players (_role_: OffensiveHalf). Then, we need to go to the doKick method in the [RoleOffensiveHalf](https://github.com/RoboCup2D/tutorial/blob/master/sections/RoleOffensiveHalf.md) class and check in which _BallArea_ the player can execute this action.
 
-Por exemplo:
+Remember that, before you implement the behavior, you need to understand how the [Strategy](https://github.com/RoboCup2D/tutorial/blob/master/sections/Strategy.md) class works.
+
+For example:
 ```cpp
 //[...]
 switch ( Strategy::get_ball_area( agent->world().ball().pos() ) ) {
     case Strategy::BA_OffMidField:
-       
+
         if(Bhv_ThroughPassKick().execute(agent))
 	    break;
-        // outras situações
+        // other actions
         break;
 
     //[...] case n:
 }
 ```
-Nesse exemplo, o jogador só irá executar o passe em profundidade se a bola estiver no meio-campo ofensivo (BA_OffMidField) e se o método execute() da classe Bhv_ThroughPassKick retornar true, ou seja, uma condição favorável ao passe. Caso a bola esteja em BA_OffMidField mas o jogador não tenha condições de fazer o passe em profundidade, ele executará outra ação (outro tipo de passe).
+
+The player will only execut the through pass if the ball is in the offensive midfield (BA_OffMidField) and if the Bhv_ThroughPassKick's execute method returns true. That is, if the player can really execute this action. If the ball is in the BA_OffMidField area but the player has no condition of executing the pass through, then another action will be executed.

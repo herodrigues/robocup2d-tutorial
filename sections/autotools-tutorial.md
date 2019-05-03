@@ -1,4 +1,4 @@
-# Autotools tutorial
+# Autotools
 
 Autotools is a suite of programming tools designed to assist in making source code packages portable to many Unix-like systems.
 https://developer.gnome.org/anjuta-build-tutorial/stable/create-autotools.html.en
@@ -20,7 +20,7 @@ In the folder src of your team there is a file called Makefile.am. This file wil
 > automake
 > ./configure
 
-The first command creates the file Makefile.in from the Makefile.am. 
+The first command creates the file Makefile.in from the Makefile.am.
 The second command generates a Makefile from the filme Makefile.in.
 
 You just need to add your classes in the Makefile.am:
@@ -41,4 +41,3 @@ PLAYERHEADERS = \
 Now, go to the src directory and run:
 
 > make
-

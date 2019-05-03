@@ -1,6 +1,8 @@
-Esta classe faz a leitura das formações do time e também define a [_role_](https://github.com/RoboCup2D/tutorial/blob/master/sections/Roles.md) de cada jogador de acordo com a formação adotada.
+# Strategy
 
-Primeiramente, é necessário entender a identificação da área onde a bola está no campo. Na classe Strategy, há um _enum_ para identificar tais áreas:
+This class reads the team formations and also defines each player [_role_](https://github.com/RoboCup2D/tutorial/blob/master/sections/Roles.md) according to the adopted formation.
+
+First, it is necessary to understand the naming convention used to determine where the ball is in the field. There is a _enum_ to identify such areas:
 
 ```cpp
 enum BallArea {
@@ -11,12 +13,16 @@ enum BallArea {
         BA_None
     };
 ```
-Conforme a figura abaixo, pode-se entender melhor essa divisão:
+
+This field division can be visualized in the image below:
 
 ![ball-area.png](https://github.com/RoboCup2D/tutorial/raw/master/images/ball-area.png)
 
-Essas demarcações podem ser alteradas posteriormente de acordo com as necessidades da equipe.
-Há dois métodos para retornar em qual área a bola está: um com a posição da bola como parâmetro e outro com a visão de mundo do jogador como parâmetro (esse segundo método faz a chamada do primeiro).
+These areas can be modified according to the team needs.
+
+There are two methods to return the ball area:
+- using the ball position as parameter
+- using the player world model 
 
 ```cpp
  static BallArea get_ball_area( const rcsc::WorldModel & wm );

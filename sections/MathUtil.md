@@ -1,28 +1,27 @@
-Classe com funções matemáticas.
+# MathUtil
 
-Abaixo estão listados alguns dos métodos dessa classe:
+Mathematical helper methods
 
 ```cpp
-// limita um valor dentro de um intervalo
+// limit a value in a interval
 template < typename  T > const T & bound( const T & low, const T & x, const T & high )
 
-// calcula o quadrado de um número
+// square value of a type
 template < typename T > T square( const T & x )
 
-// retorna se o sinal de um número 
+// returns th signal of a double
 inline double sign( const double & x )
 
-// arredonda um valor de ponto flutuante com uma precisão específica
+// round the value of a double with a precision value
 inline double round( const double & value, const double & prec )
 
-// fórmula de Bhaskara, retorna o número de soluções
+// Quadratic equation: returns the number of solutions
 inline int quadratic_formula( const double & a, const double & b, const double & c, double * sol1, double * sol2 )
 
-// calcula a soma de uma série geométrica
+// calculates the sum of a geometric series
 inline double calc_sum_geom_series( const double & first_term, const double & r, const int len )
 
-// calcula a soma de séries geométricas infinitas
+// calculate the sum of infinite geometric series
 inline double calc_sum_inf_geom_series( const double & first_term, const double & r )
-
 
 ```

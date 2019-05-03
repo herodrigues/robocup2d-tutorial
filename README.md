@@ -1,3 +1,9 @@
+# RoboCup2D Soccer Simulation Tutorial
+
+This repository contains a series of tutorials on the RoboCup2D Soccer Simulation Tutorials. The tutorials cover several topics such as installation, soccer server and the library Agend2D.
+
+This tutorial is live here: https://herodrigues.me/robocup2d-tutorial
+
 # Overview
 
 **NOTE**:
@@ -6,7 +12,7 @@
 ### Articles  
 
 - Tutorials
-    - [Installing the simulator](sections/installing-the-soccer-simulator.md) 
+    - [Installing the simulator](sections/installing-the-soccer-simulator.md)
     - [Running a match with agent2d](sections/running-a-match-with-agent2d.md)
     - [Configuring the trainer](sections/configuring-the-trainer.md)
     - [Creating formations with fedit](sections/formations-with-fedit.md)
@@ -14,7 +20,6 @@
 - Utility
     - [Autotools tutorial](sections/autotools-tutorial.md)
     - [Script to run server, monitor and teams simultaneously](sections/script-for-running-server-and-match.md)
-    - [Script to run many teams](sections/script-for-several-teams.md)
     - [SoccerWindow2 as a debugger](sections/soccerwindow2-debugger.md)
 
 - Team development

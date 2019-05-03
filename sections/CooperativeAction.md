@@ -1,19 +1,21 @@
-Classe que representa ações para serem tomadas em grupo por um agente.
+# CooperativeAction
 
-As categorias de ações são:
+Represents actions to be executed by a group of agents.
 
-Hold - segurar a bola 
-Dribble - driblar o adversário 
-Pass - passar a bola para o companheiro de equipe 
-Shoot - chutar a bola em direção ao gol 
-Move - mover-se 
-NoAction - nenhuma ação 
+The actions categories are:
 
-Basicamente, a classe possui métodos get e set para armazenar informações como número do jogador, categoria da ação, ponto final da ação, etc.
+- Hold - hold the ball
+- Dribble - dribble the opponent
+- Pass - pass the ball to a teammate
+- Shoot - kick the ball to the goal
+- Move - move the player
+- NoAction - no action
 
-A classe também possui uma struct simples e um método para comparar distâncias entre dois pontos. 
+Basically, this class has get and set methods to store information such as players number, action category, action final point, etc.
 
-```cpp 
+This class also has a simple struct and a method to compare distances between two points.
+
+```cpp
 DistCompare( const rcsc::Vector2D & pos )
             : pos_( pos )
           { }
@@ -25,5 +27,4 @@ DistCompare( const rcsc::Vector2D & pos )
           }
 ```
 
-Operador () sobrecarregado para passar dois parâmetros shared_ptr do tipo da própria classe CooperativeAction.
-Esse função é usada para comparar duas instâncias da classe CooperativeAction e determinar qual é o maior ou menor valor das distâncias euclidianas entre o vector2D targetPoint (ponto final da ação) e o ponto passado como parâmetro no método-construtor DistCompare da struct de mesmo nome. (**Veja:** dist2 em [Vector2D](https://github.com/RoboCup2D/tutorial/blob/master/sections/Vector2D.md))
+This method is used to compare distances between two CooperativeAction classes and determine which distance value is greater or lesser than the value between the vector2D targetPoint (action final point) and the point used as parameter in the constructor DistCompare of the struct with the same name. (**See:** dist2 in [Vector2D](https://github.com/RoboCup2D/tutorial/blob/master/sections/Vector2D.md))
