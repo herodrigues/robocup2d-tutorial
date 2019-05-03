@@ -38,7 +38,7 @@ This tutorial is live here: https://herodrigues.me/robocup2d-tutorial
     - [Bhv_BasicTackle](sections/Bhv_BasicTackle.md)
     - [Bhv_GoToStaticBall](sections/Bhv_GoToStaticBall.md)
 - Roles
-    - [Introduction](sections/Roles.md)
+    - [Roles](sections/Roles.md)
 - Others
     - [Strategy](sections/Strategy.md)
 
