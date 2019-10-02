@@ -7,7 +7,7 @@ This tutorial is live here: https://herodrigues.me/robocup2d-tutorial
 # Overview
 
 **NOTE**:
-- It is preferable to use your Linux distribution in English. Some problems were reported when executing the simulator when the system language uses comma as decimal separator, for example, Portuguese language.
+- It is preferable to use your Linux distribution in English. Some problems were reported when executing the simulator when the system language uses a comma as the decimal separator, for example, the Portuguese language.
 
 ### Articles  
 
