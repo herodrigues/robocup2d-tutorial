@@ -13,7 +13,7 @@ var NAVTREEINDEX0 =
 "md_sections__predict_state.html":[15],
 "md_sections__ray2_d.html":[16],
 "md_sections__roles.html":[17],
-"md_sections__soccer_math.html":[20],
+"md_sections__soccermath.html":[20],
 "md_sections__strategy.html":[22],
 "md_sections__vector2_d.html":[23],
 "md_sections_autotools-tutorial.html":[4],
