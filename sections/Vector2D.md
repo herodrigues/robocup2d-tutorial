@@ -2,52 +2,50 @@
 
 **rcsc/geom/vector_2d.h**
 
-Essa classe possui métodos de extrema importância para o entendimento do simulador, pois ela armazena dois pontos no espaço bidimensional e isso é a chave da simulação 2D de futebol.
-
-Um Vector2D nada mais é que um vetor em um espaço bidimensional como mostrado na figura:
+This class represents a point in a 2D space.
 
 ![vector2d.png](https://github.com/RoboCup2D/tutorial/raw/master/images/vector2d.png)
 
-Onde _O_ é a origem, ou seja, o centro do campo. Não se esqueça que no eixo de coordenadas do simulador, o eixo y é invertido. Portanto, o quadrante onde se encontra os pontos da figura é x e y positivo.
+Where _O_ is the origin, that is, the field center. Do not forget that the y axis is inverted in the simulator. Thus, the quadrant in which the point is on the image below is positive (x, y).
 
-Os pontos no plano são representados por:
+The points are:
 ```cpp
-double x; // coordenada X
-double y; // coordenada Y
+double x; // point in X
+double y; // point in Y
 
-// construtor padrão
+// default constructor
 Vector2D() : x( 0.0 ), y( 0.0 ) { }
 
-// construtor para associar valores diretamente
+// assignment constructor
 Vector2D( const double & xx, const double & yy ) : x( xx ), y( yy ) { }
 ```
 
-Apesar de simples, os metódos listados aqui são bastante úteis e evitam que você desperdice tempo codificando métodos que já existam. Para ver todos, procure o arquivo rcsc/geom/vector_2d.h no diretório onde você instalou a librcsc, lá todos os métodos possuem uma breve explicação.
+There are several utility methods on this class, so do not waste your time trying to rewrite them. To see them all, look for `rcsc/geom/vector_2d.h` in the same folder librcsc was installed. There's a brief explanation for all methods in that file.
 
-Nos exemplos abaixo, o vector2D passado como parâmetro vai ser comparado com a instância que você criou da classe vector2D:
+The Vector2D parameter used in the methods below will use the Vector2D parameters passedn in the constructor as the origin.
 
 ```cpp
-double r2() const      // retorna o valor ao quadrado
-double r() const       // retorna o tamanho
-double norm() const    // retorna o valor normalizado ( equivalente ao método r() )
-double norm2() const   // retorna o valor normalizado ao quadrado ( equivalente ao método r2() )
-double length() const  // retorna o tamanho ( equivalente ao método r() )
-double length2() const // retorna o valor ao quadrado do tamanho ( equivalente ao método r2() )
-AngleDeg th() const    // retorna o ângulo
-AngleDeg dir() const   // retorna o ângulo ( equivalente ao método th() )
-Vector2D abs() const   // retorna os valores absolutos
-double absX() const    // retorna o valor absoluto de x
-double absY() const    // retorna o valor absoluto de y
-Vector2D & add( const Vector2D & v )                    // adiciona os valores x e y de v ao vetor
-Vector2D & add( const double & xx, const double & yy )  // adiciona específicos valores para x e y
-Vector2D & scale( const double & scalar )               // multiplicação de x e y por escalar
-double dist2( const Vector2D & p ) const   // retorna a distância ao quadrado com o ponto 'p' (x1-x2)² + (y1-y2)²
-double dist( const Vector2D & p ) const    // retorna a distância euclidiana com o ponto 'p' √((x1-x2)² + (y1-y2)²)
+double r2() const      // squared value
+double r() const       // distance
+double norm() const    // normalized value 
+double norm2() const   // squared normalized value
+double length() const  //
+double length2() const // squared length
+AngleDeg th() const    // angle relative to the point
+AngleDeg dir() const   
+Vector2D abs() const   // absolute value 
+double absX() const    // absolute value of x
+double absY() const    // absolute value of y
+Vector2D & add( const Vector2D & v )                    // sum two Vector2D points
+Vector2D & add( const double & xx, const double & yy )  // sum (x, y) to a Vector2D point
+Vector2D & scale( const double & scalar )               // scalar multiplication
+double dist2( const Vector2D & p ) const   // squared distance from p (x1-x2)² + (y1-y2)²
+double dist( const Vector2D & p ) const    // Euclidian distance from p √((x1-x2)² + (y1-y2)²)
 
-bool equals( const Vector2D & other ) const // checa se a distância do vector2D é exatamente idêntico ao outro
-Vector2D & rotate( const double & deg )     // rotaciona o vector2D com o valor do ângulo 'deg' (retorna a referência)
-Vector2D & rotate( const AngleDeg & angle ) // rotaciona o vector2D com o ângulo do tipo AngleDeg (retorna um novo vector2D)
-Vector2D & setDir( const AngleDeg & dir )   // atribui um ângulo ao vector2D
+bool equals( const Vector2D & other ) const // checks equal distance to a Vector2D point 
+Vector2D & rotate( const double & deg )     // rotates a Vector2D using an angle value deg (returns the pointer reference)
+Vector2D & rotate( const AngleDeg & angle ) // rotates a Vector2D using an angle of type AngleDeg (returns a new Vector2D)
+Vector2D & setDir( const AngleDeg & dir )   // sets an angle to a Vector2D
 ```
 
-Além desses metódos básicos, existem diversos métodos de comparação, print e operações aritméticas como soma, divisão, subtração, etc.
+You can check this library for more methods such as printing, comparison, division, subtraction, etc.
