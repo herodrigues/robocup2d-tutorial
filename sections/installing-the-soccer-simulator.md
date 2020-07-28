@@ -23,7 +23,12 @@ To install the rcssmonitor, go to the end of this article and follow the same st
 
 ____________________________________________________________________________________
 
-Now you can continue with the installation, either if you're using Ubuntu or Debian:
+### (Optional) Using a base team 
+
+With the server installed, you can also install a base team to run a match. In this example, we're gonna use Agent2D (HELIOS base team).
+This base team also needs a utility library called librcsc.
+
+_PS: you can also use other base teams, such as [WrtightEagleBase](https://github.com/wrighteagle2d/wrighteaglebase)._
 
 Go to the Robocup tools repository on SourgeForge by clicking [here](http://en.sourceforge.jp/projects/rctools/releases/).
 
@@ -40,7 +45,7 @@ Open a terminal and extract the files:
 
 **NOTE**: all the directories names where the librcsc files are saved must not contain spaces.
 
-### Installing librcsc
+#### Installing librcsc
 
 **IMPORTANT:** _Information about all players are written in a log in which the dot(.) is used as decimal separator. Some languages,  as Portuguese, use comma as decimal separator causing an I/O error. 
 Your system language must be English. If it is not, run the command `export LC_NUMERIC="C"` on a terminal to avoid any issues._
@@ -55,7 +60,7 @@ Run the commands:
 > make  
 > sudo make install
 
-### Installing agent2d
+#### Installing agent2d
 
 > cd agent2d-x.x.x/
 
@@ -64,6 +69,18 @@ Run:
 > ./configure  
 > make  
 > sudo make install
+
+#### Troubleshooting
+
+Agent2D is quite an old project (latest release was in 2012) and you may have problems with your C++ compiler version.
+
+1. `constexpr` errors
+
+`error: ‘constexpr’ needed for in-class initialization of static data member ‘const double {anonymous}::DeflectingEvaluator::not_shoot_ball_eval’ of non-integral type`
+
+Possible solutions (each item is a separate solution):
+- Run `make` with the C++ flag `fpermissive`
+- Move `static const double not_shoot_ball_eval = 10000;` in `src/chain_action/tackle_generator.cpp` (line 71) to outside `struct DeflectingEvaluator`. You can place it right `const int ANGLE_DIVS = 40;` (line 65).
 
 ### (Optional) Installing the soccerwindow2 monitor
 
