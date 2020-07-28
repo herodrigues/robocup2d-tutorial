@@ -1,6 +1,15 @@
-# RoboCup2D Soccer Simulation Tutorial
+# RoboCup2D Soccer Simulation Tutorial (NOT OFFICIAL)
 
-This repository contains a series of tutorials on the RoboCup2D Soccer Simulation Tutorials. The tutorials cover several topics such as installation, soccer server and the library Agend2D.
+:warning: **DISCLAIMER** :warning:
+
+> These tutorials are not official. 
+
+> I created this repo while I was part of a Simulation 2D team at university. There was only Japanese guides at that time and I wanted to organize all the information I could gather and share with other developers.
+There's no guarantee that everything will work fine on your OS. Please, be advised!
+
+> For the official RoboCup 2D guide and source code, go to https://rcsoccersim.github.io/ and https://github.com/rcsoccersim.
+
+This repository contains a series of tutorials on the RoboCup2D Soccer Simulation Tutorials. The tutorials cover several topics such as installation, soccer server and the libraries librcsc and agent2d.
 
 This tutorial is live here: https://herodrigues.me/robocup2d-tutorial
 
