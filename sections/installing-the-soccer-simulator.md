@@ -80,7 +80,7 @@ Agent2D is quite an old project (latest release was in 2012) and you may have pr
 
 Possible solutions (each item is a separate solution):
 - Run `make` with the C++ flag `fpermissive`
-- Move `static const double not_shoot_ball_eval = 10000;` in `src/chain_action/tackle_generator.cpp` (line 71) to outside `struct DeflectingEvaluator`. You can place it right `const int ANGLE_DIVS = 40;` (line 65).
+- Move `static const double not_shoot_ball_eval = 10000` in `src/chain_action/tackle_generator.cpp` (line 71) outside the struct `DeflectingEvaluator`. You can place it right after `const int ANGLE_DIVS = 40` (line 64).
 
 ### (Optional) Installing the soccerwindow2 monitor
 
