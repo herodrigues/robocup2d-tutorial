@@ -3,10 +3,6 @@
 Starting from the class which extends more classes: ActionGenerator.
 This class generates a chain of actions to be taken by the agent.
 
-The class inheritance is shown in the picture below:
-
-<picture>
-
 This class has two public members: a shared pointer and a constant shared pointer.
 
 "The shared_ptr class template stores a pointer to a dynamically allocated object, typically with a C++ new-expression. The object pointed to is guaranteed to be deleted when the last shared_ptr pointing to it is destroyed or reset"
